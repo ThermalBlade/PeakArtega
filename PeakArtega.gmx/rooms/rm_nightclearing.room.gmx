@@ -56,8 +56,6 @@
     <instance objName="obj_player" x="592" y="416" name="inst_25A0C23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="608" y="432" name="inst_1D44F8D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eena" x="544" y="384" name="inst_30F6F135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gaelyn" x="464" y="448" name="inst_6F08FA33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_taye" x="480" y="416" name="inst_D07040FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fausto" x="576" y="384" name="inst_07E8A01A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snowparta1s3" x="672" y="352" name="inst_301AB366" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="672" y="416" name="inst_56D894C6" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
