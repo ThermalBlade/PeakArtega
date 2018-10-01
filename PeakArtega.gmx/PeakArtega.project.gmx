@@ -81,6 +81,7 @@
           <sprite>sprites\spr_corb_laying</sprite>
           <sprite>sprites\spr_corbeyesclosed</sprite>
           <sprite>sprites\spr_corb_right</sprite>
+          <sprite>sprites\spr_corbbeingdragged</sprite>
           <sprite>sprites\spr_corb_left</sprite>
           <sprite>sprites\spr_corb_up</sprite>
         </sprites>
@@ -141,6 +142,7 @@
             <sprite>sprites\spr_playerleftdied</sprite>
             <sprite>sprites\spr_playerupdied</sprite>
           </sprites>
+          <sprite>sprites\spr_playerdragcorb</sprite>
         </sprites>
         <sprites name="MC Shirtless">
           <sprites name="Sprint">
