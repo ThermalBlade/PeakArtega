@@ -234,6 +234,7 @@
     </sprites>
     <sprites name="Portraits">
       <sprite>sprites\spr_corbport</sprite>
+      <sprite>sprites\spr_faustoport</sprite>
       <sprite>sprites\spr_gaelynport</sprite>
       <sprite>sprites\spr_eenaport</sprite>
       <sprite>sprites\spr_MCport</sprite>
@@ -736,7 +737,7 @@
         </objects>
         <objects name="Scene Three">
           <object>objects\obj_p1s3beforeclearing</object>
-          <object>objects\obj_a1s3begin</object>
+          <object>objects\obj_p1s3begin</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
@@ -971,6 +972,7 @@
     <object>objects\obj_playOPTitle</object>
     <object>objects\obj_playOPTitleTitle</object>
     <object>objects\obj_beat</object>
+    <object>objects\obj_p1s3eenatocorb</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -985,9 +987,13 @@
     <timelines name="a1s2">
       <timeline>timelines\cs_p1s2closeeyes</timeline>
       <timeline>timelines\cs_p1s2panic</timeline>
+      <timeline>timelines\cs_p1s2waitbeforebeg</timeline>
+      <timeline>timelines\cs_p1s22waitbeforebeg</timeline>
     </timelines>
-    <timeline>timelines\cs_p1s2waitbeforebeg</timeline>
-    <timeline>timelines\cs_p1s22waitbeforebeg</timeline>
+    <timelines name="a1s3">
+      <timeline>timelines\cs_p1s3dragcorb</timeline>
+      <timeline>timelines\cs_p1s3eenatocorb</timeline>
+    </timelines>
   </timelines>
   <rooms name="rooms">
     <room>rooms\rm_titlescreen</room>

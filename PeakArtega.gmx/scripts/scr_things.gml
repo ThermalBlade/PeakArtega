@@ -5,3 +5,4 @@ if(person == corb){name = "Corb"; port = spr_corbport;}
 if(person == maninrobe){name = "Man in Robe"; port = spr_corbport;}
 if(person == eena){name = "Eena"; port = spr_eenaport;}
 if(person == gaelyn){name = "Gaelyn"; port = spr_eenaport;}
+if(person == fausto){name = "Fausto"; port = spr_faustoport;}

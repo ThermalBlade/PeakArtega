@@ -5,10 +5,13 @@ blank = 3;
 corb = 4;
 eena = 5;
 gaelyn = 6;
+fausto = 7;
 
 normal = 0;
 none = 0;
 pain = 1;
-sarcastic = 2;
+sad = 1;
+happy = 2;
 angry = 3;
 scared = 4;
+suprised = 4;
