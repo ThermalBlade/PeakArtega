@@ -135,7 +135,7 @@ else if(i == 2){message = "Hey man, we are not looking for any sort of trouble..
 else if(i == 3){message = "Oh my god! What happened to him!?"; person = eena; emotion = suprised; anim = upandex; pal = 0;}
 else if(i == 4){message = ""; event_user(2); instance_create(0, 0, obj_p1s3eenatocorb);}
 else if(i == 5){thought = 1; message = "You consider your next words carefully. These two people could very well be your enemy, you don't want to reveal who you are, if they don't already know."; tal = 0; person = blank; emotion = blank;}
-else if(i == 6){thought = 0; message = "He was attacked, and stabbed..."; person = MC;}
+else if(i == 6){thought = 0; message = "He was attacked, and stabbed....."; person = MC;}
 else if(i == 44){event_user(1);}
 
 messageplace = message;
