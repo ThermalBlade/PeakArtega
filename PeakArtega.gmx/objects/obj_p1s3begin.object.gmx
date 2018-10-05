@@ -131,11 +131,19 @@ ran = 0;
 //event_user(1);
 if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
 else if(i == 1){message = ""; choice = ""; timeline_index = cs_p1s3dragcorb; timeline_position = 0; timeline_running = true; event_user(2);}
-else if(i == 2){message = "Hey man, we are not looking for any sort of trouble..."; person = fausto; emotion = suprised; cal = 0; pal = 0; tal = 0; choiceamt = 0;}
-else if(i == 3){message = "Oh my god! What happened to him!?"; person = eena; emotion = suprised; anim = upandex; pal = 0;}
+else if(i == 2){message = "Hey man, we are not looking for any sort of trouble..."; person = manwithlonghair; emotion = suprised; cal = 0; pal = 0; tal = 0; choiceamt = 0;}
+else if(i == 3){message = "Oh my god! What happened to him!?"; person = womanwithcrossbow; emotion = suprised; anim = upandex; pal = 0;}
 else if(i == 4){message = ""; event_user(2); instance_create(0, 0, obj_p1s3eenatocorb);}
 else if(i == 5){thought = 1; message = "You consider your next words carefully. These two people could very well be your enemy, you don't want to reveal who you are, if they don't already know."; tal = 0; person = blank; emotion = blank;}
-else if(i == 6){thought = 0; message = "He was attacked, and stabbed....saggadfga,,,,,."; person = MC;}
+else if(i == 6){thought = 0; message = "He was attacked, and stabbed..."; person = MC;}
+else if(i == 7){message = "No, really? He's bleedin' through his shirt. Better yet, and what I think she meant to ask, is who stabbed him?"; person = manwithlonghair; emotion = angry; anim = que; pal = 0;}
+else if(i == 8){message = "Fausto, bring your bag over here, this guy is bleeding out... fast."; person = womanwithcrossbow; emotion = normal; pal = 0;}
+else if(i == 9){message = "Not before he answeres my question! We don't wanna get caught up in anything bad, do we?"; person = fausto; emotion = angry; anim = upandex; pal = 0;}
+else if(i == 10){thought = 1; message = "You obviously have to lie here. Assuming these are perfect strangers, and you can't be sure if that's the case, explaining your situation liklely won't work out for you."; person = blank;}
+else if(i == 11){message = "It seems like this Fausto person can help Corb somehow. You need their trust, and you need Fausto to help Corb..." person = blank;}
+else if(i == 12){thought = 0; message = "I came across him a bit ago. He was just barely awake then. He did tell me he was attacked, but he didn't say by who. I saw the smoke from your fire, and hoped you could help him..." person = MC; pal = 0;}
+else if(i == 13){message = "Happy, Faus?"; person = Eena; pal = 0;}
+else if(i == 14){}
 else if(i == 44){event_user(1);}
 
 messageplace = message;

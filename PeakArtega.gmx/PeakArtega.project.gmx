@@ -973,6 +973,7 @@
     <object>objects\obj_playOPTitleTitle</object>
     <object>objects\obj_beat</object>
     <object>objects\obj_p1s3eenatocorb</object>
+    <object>objects\obj_p1s3faustotocorb</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">

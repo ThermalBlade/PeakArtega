@@ -6,6 +6,8 @@ corb = 4;
 eena = 5;
 gaelyn = 6;
 fausto = 7;
+manwithlonghair = 8;
+womanwithcrossbow = 9;
 
 normal = 0;
 none = 0;

@@ -40,9 +40,9 @@ if(invis == 0)
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_color(c_white);
-    
     if(count <= 0 && i >= 1)
     {
+        st = 0;
         var j;
         for(j = 0; j < string_length(message); j ++)
         {
@@ -50,13 +50,15 @@ if(invis == 0)
             {
                 message = string_delete(message, last_space, 1);
                 message = string_insert("#", message, last_space);
-                ds_list_add(start, last_space + 1);
+                st = last_space + 1;
+                //ds_list_add(start, last_space + 1);
             }
             if(string_char_at(message, j) == " ")
             {
                 last_space = j;
             }
-            stri = string_copy(message, ds_list_find_value(start, line), j-ds_list_find_value(start, line));
+            //stri = string_copy(message, ds_list_find_value(start, line), j - ds_list_find_value(start, line));
+            stri = string_copy(message, st, j - st);
         }
         fullmessage = message;
         for(j = 0; j < string_length(message) + 100; j ++)
