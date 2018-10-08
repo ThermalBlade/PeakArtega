@@ -14,7 +14,7 @@ if(person == 6)
 {
     personobject = obj_gaelyn;
 }
-if(person == 7 || person == 9)
+if(person == 7 || person == 8)
 {
     personobject = obj_fausto;
 }

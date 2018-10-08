@@ -51,12 +51,12 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_corb" x="736" y="448" name="inst_63BDDF06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_corb" x="736" y="450" name="inst_63BDDF06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_night" x="528" y="336" name="inst_13456E5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="720" y="448" name="inst_25A0C23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="720" y="450" name="inst_25A0C23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="592" y="464" name="inst_1D44F8D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_eena" x="560" y="419" name="inst_30F6F135" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fausto" x="566" y="440" name="inst_07E8A01A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fausto" x="566" y="434" name="inst_07E8A01A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snowparta1s3" x="672" y="352" name="inst_301AB366" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="672" y="416" name="inst_56D894C6" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="688" y="368" name="inst_19BE5726" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
@@ -85,6 +85,8 @@
     <instance objName="obj_saving" x="544" y="336" name="inst_9213DE25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_p1s3begin" x="512" y="336" name="inst_291C2C6F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fadein" x="560" y="336" name="inst_56746D6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_one" x="553" y="416" name="inst_D93FF0B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_two" x="556" y="416" name="inst_070C819F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="624" y="512" w="16" h="16" xo="0" yo="0" id="10008014" name="inst_C59D67F7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -142,8 +142,18 @@ else if(i == 9){message = "Not before he answeres my question! We don't wanna ge
 else if(i == 10){thought = 1; message = "You obviously have to lie here. Assuming these are perfect strangers, and you can't be sure if that's the case, explaining your situation liklely won't work out for you."; person = blank;}
 else if(i == 11){message = "It seems like this Fausto person can help Corb somehow. You need their trust, and you need Fausto to help Corb..." person = blank;}
 else if(i == 12){thought = 0; message = "I came across him a bit ago. He was just barely awake then. He did tell me he was attacked, but he didn't say by who. I saw the smoke from your fire, and hoped you could help him..." person = MC; pal = 0;}
-else if(i == 13){message = "Happy, Faus?"; person = Eena; pal = 0;}
-else if(i == 14){}
+else if(i == 13){message = "Happy, Faus? Just come help this man, NOW!"; person = eena; emotion = angry; pal = 0; obj_eena.sprite_index = spr_eena_left;}
+else if(i == 14){message = ""; event_user(2); instance_create(0, 0, obj_p1s3faustotocorb); instance_create(0, 0, obj_p1s3eenatofire);}
+else if(i == 15){event_user(2); instance_create(0, 0, obj_p1s3MCtoEena);}
+else if(i == 16){message = "Fausto will try to do whatever he can... He's my brother, by the way. I'm Eena."; person = eena; emotion = normal; pal = 0;}
+else if(i == 17){obj_player.sprite_index = spr_player_right; message = "What is Fausto doing to him?"; person = MC;}
+else if(i == 18){obj_player.sprite_index = spr_player_up; message = "What he's best at. You're darn lucky it was us you stumbled on tonight, Faus studied medicine most of his life."; person = eena; emotion = normal; pal = 0;}
+else if(i == 19){obj_player.sprite_index = spr_player_right; message = "Is he going to be okay?"; person = MC;}
+else if(i == 20){obj_eena.sprite_index = spr_eena_right; message = "It's impossible to know right now. But as she said, I'm going to do everything I can."; person = fausto; emotion = normal; pal = 0;}
+else if(i == 21){obj_eena.sprite_index = spr_eena_down; message = "So... who are you?" person = eena; emotion = normal; pal = 0; obj_player.sprite_index = spr_player_up;}
+else if(i == 22){thought = 1; message = "You have to tell them something. You can probably give them just about anything, but you do need to give them a name..."; person = blank;}
+else if(i == 23){instance_create(0, 0, obj_naming); event_user(2);}
+else if(i == 24){}
 else if(i == 44){event_user(1);}
 
 messageplace = message;

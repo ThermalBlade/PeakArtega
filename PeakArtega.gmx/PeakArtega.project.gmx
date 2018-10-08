@@ -184,6 +184,7 @@
       <sprites name="Fausto">
         <sprites name="Normal">
           <sprite>sprites\spr_fausto_down</sprite>
+          <sprite>sprites\spr_fausto_fixing</sprite>
           <sprite>sprites\spr_fausto_right</sprite>
           <sprite>sprites\spr_fausto_left</sprite>
           <sprite>sprites\spr_fausto_up</sprite>
@@ -457,6 +458,7 @@
     <sprite>sprites\spr_movementtut</sprite>
     <sprite>sprites\spr_interacttut</sprite>
     <sprite>sprites\spr_keymovementtut</sprite>
+    <sprite>sprites\spr_naming</sprite>
     <sprite>sprites\spr_entertut</sprite>
     <sprite>sprites\spr_snowtree</sprite>
   </sprites>
@@ -960,6 +962,7 @@
     </objects>
     <object>objects\obj_print</object>
     <object>objects\obj_animations</object>
+    <object>objects\obj_gotoplace</object>
     <object>objects\obj_ex</object>
     <object>objects\obj_que</object>
     <object>objects\obj_corbsdroppedsword</object>
@@ -974,6 +977,9 @@
     <object>objects\obj_beat</object>
     <object>objects\obj_p1s3eenatocorb</object>
     <object>objects\obj_p1s3faustotocorb</object>
+    <object>objects\obj_p1s3eenatofire</object>
+    <object>objects\obj_p1s3MCtoEena</object>
+    <object>objects\obj_naming</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">

@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>sw = 0;
-timer = 0;
 </string>
           </argument>
         </arguments>
@@ -51,46 +50,46 @@ timer = 0;
             <kind>1</kind>
             <string>if(sw == 0)
 {    
-    with(obj_fausto)
+    with(obj_player)
     {
-        if(x &lt; obj_corb.x)
+        if(x &gt; obj_eena.x)
         {
-            phy_speed_x = 1;
-            sprite_index = spr_fausto_rightsprint;
+            phy_speed_x = -0.5;
+            sprite_index = spr_player_left;
             image_speed = .1;
         }
         else
         {
-            obj_p1s3faustotocorb.sw = 1;
+            obj_p1s3MCtoEena.sw = 1;
         }
     }
 }
 else if(sw == 1)
 {
-    with(obj_fausto)
+    with(obj_player)
     {
         phy_speed_x = 0;
-        if(!place_meeting(x, y, obj_corb))
+        if(!place_meeting(x, y, obj_two))
         {
-            phy_speed_y = 1;
-            sprite_index = spr_fausto_downsprint;
+            phy_speed_y = -0.5;
+            sprite_index = spr_player_up;
         }
         else
         {
-            obj_p1s3faustotocorb.sw = 2;
+            obj_p1s3MCtoEena.sw = 2;
         }
     }
 }
 else if(sw == 2)
 {
-    with(obj_fausto)
+    with(obj_player)
     {
         phy_speed_x = 0;
         phy_speed_y = 0;
-        phy_position_y += 4;
-        image_speed = .01;
+        image_speed = 0;
         image_index = 0;
-        sprite_index = spr_fausto_fixing;
+        sprite_index = spr_player_up;
+        with(obj_p1s3begin){i += 1; invis = 0; event_user(0);}
     }
     instance_destroy();
 }
