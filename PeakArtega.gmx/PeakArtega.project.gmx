@@ -459,6 +459,7 @@
     <sprite>sprites\spr_interacttut</sprite>
     <sprite>sprites\spr_keymovementtut</sprite>
     <sprite>sprites\spr_naming</sprite>
+    <sprite>sprites\spr_backdone</sprite>
     <sprite>sprites\spr_entertut</sprite>
     <sprite>sprites\spr_snowtree</sprite>
   </sprites>
