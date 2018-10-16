@@ -183,8 +183,8 @@ if(invis == 0)
             var t = max(string_width(choice[0]), string_width(choice[1]), 0);
         }
         var v = (array_length_1d(choice)*72);   
-        draw_sprite_stretched(spr_choiceback, 0, 2, 634 - v, t + 114, v + 12);
-        draw_sprite_stretched(spr_choice, 0, 8, 640 - v, t + 102, v);
+        draw_sprite_stretched(spr_choiceback, 0, 24, 634 - v, t + 114, v + 12);
+        draw_sprite_stretched(spr_choice, 0, 30, 640 - v, t + 102, v);
         
         draw_set_alpha(cal);
         draw_set_color(c_white);
@@ -193,11 +193,11 @@ if(invis == 0)
         for(m = 0; m < array_length_1d(choice); m += 1)
         {
             draw_set_font(fnt_dialouge);
-            draw_text(64 , 630 -(m * space), string(choice[m]));
+            draw_text(80 , 630 -(m * space), string(choice[m]));
             if(mpos == m)
             {
                 draw_set_alpha(1);
-                draw_text(64 , 630 -(m * space), string(choice[m]));
+                draw_text(80 , 630 -(m * space), string(choice[m]));
                 draw_set_alpha(cal);
             }
         }
@@ -205,7 +205,7 @@ if(invis == 0)
         {
             diadon += .25;
         }
-        draw_sprite_stretched(spr_choicedone, diadon,  24, 572 - mpos * space, 48, 48);
+        draw_sprite_stretched(spr_choicedone, diadon,  44, 572 - mpos * space, 48, 48);
         var move = 0;
         move += max(up_key, arrow_up_key, cup_key, 0);
         move -= max(down_key, arrow_down_key, cdown_key, 0);

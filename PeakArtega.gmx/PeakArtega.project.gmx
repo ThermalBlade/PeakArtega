@@ -25,6 +25,7 @@
       <sound>sound\snd_cs1</sound>
       <sound>sound\snd_dia1</sound>
       <sound>sound\snd_dia2</sound>
+      <sound>sound\snd_dia3</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -741,6 +742,7 @@
         <objects name="Scene Three">
           <object>objects\obj_p1s3beforeclearing</object>
           <object>objects\obj_p1s3begin</object>
+          <object>objects\obj_p1s3namesure</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
