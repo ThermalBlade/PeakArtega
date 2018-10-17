@@ -96,6 +96,7 @@
           <argument>
             <kind>1</kind>
             <string>//global.move = 0;
+instance_create(0, 0, obj_p1s3taytocamp)
 instance_destroy();
 </string>
           </argument>
@@ -130,7 +131,16 @@ ran = 0;
 if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
 else if(i == 1){message = ", you consider if you're certain this is the name you want to give."; message = string_insert(global.playername, message, 0); choice[0] = "No"; choice[1] = "Yes"; person = blank; tal = 0; choiceamt = 2;}
 else if(i == 2){if(global.choice == 1){i += 1; event_user(0);}else{instance_create(0, 0, obj_naming); instance_destroy();}}
-else if(i == 3){message = "Aighty then."; person = eena; emotion = normal; pal = 0;}
+else if(i == 3){message = "What were you doing out here tonight, "; message = string_insert(global.playername + "?", message, string_length(message)); person = fausto; emotion = normal; pal = 0; choiceamt = 0; choice = 1; obj_player.sprite_index = spr_player_right;}
+else if(i == 4){message = "You're making it sound like an interrogation."; person = eena; emotion = normal; pal = 0; obj_eena.sprite_index = spr_eena_right;}
+else if(i == 5){message = "Just a minute ago, he dragged a nearly dead man onto our campsite. I'll ask him whatever the fuck I want."; person = fausto; emotion = angry; pal = 0;}
+else if(i == 6){message = "Language."; person = eena; emotion = angry; pal = 0;}
+else if(i == 7){thought = 1; message = "Fausto is worrying you. You want these people on your side. You need these people on your side. You think back to what Corb was telling you, and lie."; person = blank; emotion = blank;}
+else if(i == 8){thought = 0; message = "I'm a hunter." person = MC;}
+else if(i == 9){message = "Hunter of what?"; person = fausto; emotion = normal; pal = 0; anim = que;}
+else if(i == 10){message = "What do you mean?"; person = MC;}
+else if(i == 11){message = "Are you braindead? What else could I mean? What do you hunt?"; person = fausto; pal = 0; anim = que;}
+else if(i == 12){event_user(1);}
 
 messageplace = message;
 

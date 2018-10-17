@@ -982,6 +982,7 @@
     <object>objects\obj_p1s3faustotocorb</object>
     <object>objects\obj_p1s3eenatofire</object>
     <object>objects\obj_p1s3MCtoEena</object>
+    <object>objects\obj_p1s3taytocamp</object>
     <object>objects\obj_naming</object>
   </objects>
   <timelines name="timelines">
