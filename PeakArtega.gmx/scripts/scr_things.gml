@@ -8,3 +8,7 @@ if(person == gaelyn){name = "Gaelyn"; port = spr_gaelynport;}
 if(person == fausto){name = "Fausto"; port = spr_faustoport;}
 if(person == manwithlonghair){name = "Man With Long Hair"; port = spr_faustoport;}
 if(person == womanwithcrossbow){name = "Woman With Crossbow"; port = spr_eenaport;}
+if(person == manwithblackhair){name = "Man With Black Hair"; port = spr_tayeport;}
+if(person == womanwithblackhair){name = "Woman With Black Hair"; port = spr_gaelynport;}
+if(person == taye){name = "Taye"; port = spr_tayeport;}
+if(person == gaelyn){name = "Gaelyn"; port = spr_gaelynport;}

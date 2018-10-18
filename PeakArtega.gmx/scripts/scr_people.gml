@@ -8,6 +8,10 @@ gaelyn = 6;
 fausto = 7;
 manwithlonghair = 8;
 womanwithcrossbow = 9;
+manwithblackhair = 10;
+taye = 11;
+womanwithblackhair = 12;
+gaelyn = 13;
 
 normal = 0;
 none = 0;

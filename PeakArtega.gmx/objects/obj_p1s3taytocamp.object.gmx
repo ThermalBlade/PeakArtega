@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>sw = 0;
-instance_create(736, 448, obj_taye);
+instance_create(736, 432, obj_taye);
+timeline_index = cs_p1s3tayesuprise; 
+timeline_position = 0; 
+timeline_running = true;
 </string>
           </argument>
         </arguments>
@@ -49,15 +52,18 @@ instance_create(736, 448, obj_taye);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(sw == 0)
-{    
+            <string>global.cam = 0;
+if(sw == 0)
+{ 
     with(obj_taye)
     {
-        if(x &gt; 624)
+        if(x &gt; 656)
         {
             phy_speed_x = -0.5;
             sprite_index = spr_taye_left;
             image_speed = .1;
+            global.camx = 640;
+            global.camy = 448;
         }
         else
         {
@@ -73,6 +79,9 @@ else if(sw == 1)
         phy_speed_y = 0;
         image_speed = 0;
         image_index = 0;
+        global.camx = 592;
+        global.camy = 480;
+        instance_create(0, 0, obj_p1s3aftertaye);
         //with(obj_p1s3begin){i += 1; invis = 0; event_user(0);}
     }
     instance_destroy();

@@ -31,10 +31,6 @@ name = "";
 bounce = 0;
 bouncer = 0;
 al = 0;
-if(!audio_is_playing(snd_dia3))
-{
-    global.music = audio_play_sound(snd_dia3, 0, true);
-}
 </string>
           </argument>
         </arguments>

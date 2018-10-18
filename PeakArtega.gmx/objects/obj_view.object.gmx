@@ -61,8 +61,8 @@ else if(global.camx == 1 &amp;&amp; global.camy == 1)
 }
 else 
 {
-    x += (global.camx - x) * .05;
-    y += (global.camy - y) * .05;
+    x += (global.camx - x) * .1;
+    y += (global.camy - y) * .1;
 }
 
 </string>

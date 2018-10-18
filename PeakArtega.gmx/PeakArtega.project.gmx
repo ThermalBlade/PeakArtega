@@ -238,6 +238,7 @@
       <sprite>sprites\spr_corbport</sprite>
       <sprite>sprites\spr_faustoport</sprite>
       <sprite>sprites\spr_gaelynport</sprite>
+      <sprite>sprites\spr_tayeport</sprite>
       <sprite>sprites\spr_eenaport</sprite>
       <sprite>sprites\spr_MCport</sprite>
       <sprite>sprites\spr_blankport</sprite>
@@ -743,6 +744,7 @@
           <object>objects\obj_p1s3beforeclearing</object>
           <object>objects\obj_p1s3begin</object>
           <object>objects\obj_p1s3namesure</object>
+          <object>objects\obj_p1s3aftertaye</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
@@ -1004,6 +1006,7 @@
     <timelines name="a1s3">
       <timeline>timelines\cs_p1s3dragcorb</timeline>
       <timeline>timelines\cs_p1s3eenatocorb</timeline>
+      <timeline>timelines\cs_p1s3tayesuprise</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">

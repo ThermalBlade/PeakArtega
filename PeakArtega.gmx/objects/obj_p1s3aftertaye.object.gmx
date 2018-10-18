@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>scr_createtextbox();
-global.music = audio_play_sound(snd_dia2, 0, true);
 
 </string>
           </argument>
@@ -97,7 +96,7 @@ global.music = audio_play_sound(snd_dia2, 0, true);
           <argument>
             <kind>1</kind>
             <string>//global.move = 0;
-instance_create(0, 0, obj_p1s2fadeout);
+instance_create(0, 0, obj_p1s3taytocamp)
 instance_destroy();
 </string>
           </argument>
@@ -130,31 +129,8 @@ ran = 0;
 //event_user(2); beat = 1;
 //event_user(1);
 if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
-else if(i == 1){message = ""; choice = ""; timeline_index = cs_p1s3dragcorb; timeline_position = 0; timeline_running = true; event_user(2);}
-else if(i == 2){message = "Hey man, we are not looking for any sort of trouble..."; person = manwithlonghair; emotion = suprised; cal = 0; pal = 0; tal = 0; choiceamt = 0;}
-else if(i == 3){message = "Oh my god! What happened to him!?"; person = womanwithcrossbow; emotion = suprised; anim = upandex; pal = 0;}
-else if(i == 4){message = ""; event_user(2); instance_create(0, 0, obj_p1s3eenatocorb);}
-else if(i == 5){thought = 1; message = "You consider your next words carefully. These two people could very well be your enemy, you don't want to reveal who you are, if they don't already know."; tal = 0; person = blank; emotion = blank;}
-else if(i == 6){thought = 0; message = "He was attacked, and stabbed..."; person = MC;}
-else if(i == 7){message = "No, really? He's bleedin' through his shirt. Better yet, and what I think she meant to ask, is who stabbed him?"; person = manwithlonghair; emotion = angry; anim = que; pal = 0;}
-else if(i == 8){message = "Fausto, bring your bag over here, this guy is bleeding out... fast."; person = womanwithcrossbow; emotion = normal; pal = 0;}
-else if(i == 9){message = "Not before he answeres my question! We don't wanna get caught up in anything bad, do we?"; person = fausto; emotion = angry; anim = upandex; pal = 0;}
-else if(i == 10){thought = 1; message = "You obviously have to lie here. Assuming these are perfect strangers, and you can't be sure if that's the case, explaining your situation liklely won't work out for you."; person = blank;}
-else if(i == 11){message = "It seems like this Fausto person can help Corb somehow. You need their trust, and you need Fausto to help Corb..." person = blank;}
-else if(i == 12){thought = 0; message = "I came across him a bit ago. He was just barely awake then. He did tell me he was attacked, but he didn't say by who. I saw the smoke from your fire, and hoped you could help him..." person = MC; pal = 0;}
-else if(i == 13){message = "Happy, Faus? Just come help this man, NOW!"; person = eena; emotion = angry; pal = 0; obj_eena.sprite_index = spr_eena_left;}
-else if(i == 14){message = ""; event_user(2); instance_create(0, 0, obj_p1s3faustotocorb); instance_create(0, 0, obj_p1s3eenatofire);}
-else if(i == 15){event_user(2); instance_create(0, 0, obj_p1s3MCtoEena);}
-else if(i == 16){message = "Fausto will try to do whatever he can... He's my brother, by the way. I'm Eena."; person = eena; emotion = normal; pal = 0;}
-else if(i == 17){obj_player.sprite_index = spr_player_right; message = "What is Fausto doing to him?"; person = MC;}
-else if(i == 18){obj_player.sprite_index = spr_player_up; message = "What he's best at. You're darn lucky it was us you stumbled on tonight, Faus studied medicine most of his life."; person = eena; emotion = normal; pal = 0;}
-else if(i == 19){obj_player.sprite_index = spr_player_right; message = "Is he going to be okay?"; person = MC;}
-else if(i == 20){obj_eena.sprite_index = spr_eena_right; message = "It's impossible to know right now. But as she said, I'm going to do everything I can."; person = fausto; emotion = normal; pal = 0;}
-else if(i == 21){obj_eena.sprite_index = spr_eena_down; message = "So... who are you?" person = eena; emotion = normal; pal = 0; obj_player.sprite_index = spr_player_up;}
-else if(i == 22){thought = 1; message = "You have to tell them something. You can probably give them just about anything, but you do need to give them a name..."; person = blank;}
-else if(i == 23){instance_create(0, 0, obj_naming); event_user(2);}
-else if(i == 24){}
-else if(i == 44){event_user(1);}
+else if(i == 1){message = "What were you doing out here tonight?"; person = manwithblackhair; emotion = normal; pal = 0; tal = 0;}
+else if(i == 12){event_user(1);}
 
 messageplace = message;
 

@@ -17,7 +17,7 @@ global.enemy2 = 0;
 global.enemy3 = 0;
 global.enemy4 = 0;
 global.enemy5 = 0;
-global.volume = 11/13;
+global.volume = 4/13;
 audio_master_gain(global.volume);
 global.xe = 0;
 global.ye = 0;
