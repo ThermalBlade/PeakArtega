@@ -129,8 +129,57 @@ ran = 0;
 //event_user(2); beat = 1;
 //event_user(1);
 if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
-else if(i == 1){message = "What were you doing out here tonight?"; person = manwithblackhair; emotion = normal; pal = 0; tal = 0;}
-else if(i == 12){event_user(1);}
+else if(i == 1){message = "Oh boy, another stranger. Did you also bring a friend for me to patch up too?"; person = fausto; emotion = angry; pal = 0; tal = 0;}
+else if(i == 2){message = "What happened to him? The one in the robe, is he okay?"; person = manwithblackhair; emotion = normal; pal = 0;}
+else if(i == 3){message = "Does he look okay?" person = fausto; emotion = angry; pal = 0; anim = que;}
+else if(i == 4){message = "No. No he is not. But I'm trying my best to fix that. Who the hell are you?"; emotion = normal;}
+else if(i == 5){message = "I was near and saw the campfire, figured I would ask if I could share the warmth."; person = manwithblackhair; emotion = normal; pal = 0;}
+else if(i == 6){message = "For years we have set up camp in the wild. Not once did any stranger ever come to even say hi after the sun went down. Probably for good reason too."; person = fausto; emotion = normal; pal = 0;}
+else if(i == 7){message = "Now, two people... well actually three... have wandered onto our camp in the last ten minutes. What the hell is happening?"; emotion = angry; anim = que;}
+else if(i == 8){message = "I don't know what to tell you. Something weird is definitely going on though. Did you guys see that flash of light, at the top of the mountain?"; person = manwithblackhair; emotion = normal; pal = 0;}
+else if(i == 9){thought = 1; message = "You start to get uneasy. That flash of light had something to do with you, but that's not something you can make public. You wonder who this new guy is, and how much, if at all, he can be trusted." person = blank; instance_create(0, 0, obj_animations); obj_animations.per = obj_player; obj_animations.animation = upandex;}
+else if(i == 10){thought = 0; message = "We did see it. I've never seen lightning in a snowstorm before..."; person = eena; emotion = normal; pal = 0;}
+else if(i == 11){message = "That wasn't lightning."; person = manwithblackhair; pal = 0; emotion = angry;}
+else if(i == 12){message = "Then what was it?"; person = eena; anim = que; emotion = suprised; pal = 0;}
+else if(i == 13){message = "Something else, I'm sure..."; person = manwithblackhair; emotion = normal; pal = 0;}
+else if(i == 14){message = ""; event_user(2); instance_create(0, 0, obj_p1s3taytocenter);}
+else if(i == 15){message = "My name is Taye. I'm a bounty hunter... And why I really came here was to see if you guys know where the people I am looking for are."; person = taye; emotion = normal; pal = 0; tal = 0;}
+else if(i == 16){message = "I thought you came here to share the warmth..."; person = fausto; emotion = angry; pal = 0;}
+else if(i == 17){message = "Well I would hope that would be the case if you didn't know where they were... But that was not the case."; person = taye; emotion = normal; pal = 0;}
+else if(i == 18){message = "What?" person = eena; emotion = suprised; pal = 0; anim = upandque;}
+else if(i == 19){message = "The nearly dead man on the ground is one of the people without a doubt."; person = taye; pal = 0; emotion = normal;}
+else if(i == 20){thought = 1; message = "Any easiness you had with these people just disapeared. This guy Taye knows who Corb is, which means he may just know who you are too." person = blank;}
+else if(i == 21){message = "You quickly wonder what to do. Run? Fight? If you run, it will only confirm your involvment with Corb, and you're not sure if you can even outrun this guy.";}
+else if(i == 22){message = "If you fight, you imagine having to kill all three people surrounding you. That would be the cleanest way...";}
+else if(i == 23){message = "And you don't have drawbacks about killing these people, as a matter of fact at this point you may be safer without any of them.";}
+else if(i == 24){message = "But as you start to think of the best way to go about killing three people, you realize this may even put you at a greater risk. You have no idea what your combat ability is.";}
+else if(i == 25){message = "Corb said you're a weapon, so maybe killing Taye, Fausto, and Eena will come naturally to you, and it will be easy. But what if that's not the case at all?";}
+else if(i == 26){message = "What if you're clumsy with a sword, and Eena shoots you with her crossbow before you and even get your weapon above your head.";}
+else if(i == 27){message = "At this point, you decide to wait it out, doing anything else is too risky. Keep the lie going for now...";}
+else if(i == 28){thought = 0; message = "Did you think his robe was strange at all? It's not a fashion statement, he's a member of an organization called The Symic."; person = taye; emotion = angry; pal = 0;}
+else if(i == 29){message = "And there's a... fairly... strong chance you're all part of the very same organization..."; person = taye; emotion = normal;}
+else if(i == 30){message = "What!? We've never heard of The Symic before. We're letter deliverers, couriers! Ask anybody in Saiphants who works postal, they know me and Faus..."; person = eena; emotion = angry;}
+else if(i == 31){message = "Okay... And what about you? You've been silent since I walked onto this little campsite. What's your story?"; person = taye; emotion = normal;}
+else if(i == 32){thought = 1; message = "Taye is looking at you now."; person = blank;}
+else if(i == 33){thought = 0; message = "I'm a hunter. I came across this guy earlier tonight... he was hurt when I found him. I brought him here hoping that these people could help him more than I could." person = MC;}
+else if(i == 34){message = "And you two just let this stranger drag a nearly dead man onto your campsite?"; person = taye; emotion = normal; pal = 0;}
+else if(i == 35){message = "He needed help... a man was dying..."; person = eena; emotion = angry; pal = 0;}
+else if(i == 36){message = "And you used your skills as... couriers... to patch him up?"; person = taye; emotion = normal; pal = 0;}
+else if(i == 37){message = "Fuck off. Just because we deliver letters doesn't mean we can't perform first aid."; person = fausto; emotion = angry; pal = 0;}
+else if(i == 38){message = "Clearly you did something more than just wrap some wounds. If I had to guess you must have some background in medicine, possibly potions. But that's not my point."; person = taye; emotion = normal; pal = 0;}
+else if(i == 39){message = "My point is, if you're couriers, where are your letters. May I see them?"; person = taye; emotion = normal;}
+else if(i == 40){message = "We don't have any right now, Saiphants is our hub. After doin' a round of deliveries we go back there for our next batch."; person = eena; emotion = normal; pal = 0;}
+else if(i == 41){message = "That doesn't make much sense, surely many people send letters to Saiphants."; person = taye; emotion = normal; pal = 0;}
+else if(i == 42){message = "I'm sure they do, but that's not our route."; person = eena; emotion = angry; pal = 0;}
+else if(i == 43){beat = 1; event_user(2);}
+else if(i == 44){message = "That crossbow, hanging";}
+
+
+
+
+
+//else if(i == 11){
+else if(i == 100){event_user(1);}
 
 messageplace = message;
 

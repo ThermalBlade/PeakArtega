@@ -26,10 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>sw = 0;
-instance_create(736, 430, obj_taye);
-timeline_index = cs_p1s3tayesuprise; 
-timeline_position = 0; 
-timeline_running = true;
+ft = 0;
+//timeline_index = cs_p1s3tayesuprise; 
+//timeline_position = 0; 
+//timeline_running = true;
 </string>
           </argument>
         </arguments>
@@ -57,17 +57,20 @@ if(sw == 0)
 { 
     with(obj_taye)
     {
-        if(x &gt; 656)
+        if(obj_p1s3taytocenter.ft == 0 and x &lt; obj_fausto.x)
+        {
+            obj_fausto.sprite_index = spr_fausto_left;
+            obj_p1s3taytocenter.ft = 1;
+        }
+        if(x &gt; 600)
         {
             phy_speed_x = -0.5;
             sprite_index = spr_taye_left;
             image_speed = .1;
-            global.camx = 640;
-            global.camy = 448;
         }
         else
         {
-            obj_p1s3taytocamp.sw = 1;
+            obj_p1s3taytocenter.sw = 1;
         }
     }
 }
@@ -79,10 +82,7 @@ else if(sw == 1)
         phy_speed_y = 0;
         image_speed = 0;
         image_index = 0;
-        global.camx = 592;
-        global.camy = 480;
-        instance_create(0, 0, obj_p1s3aftertaye);
-        //with(obj_p1s3begin){i += 1; invis = 0; event_user(0);}
+        with(obj_p1s3aftertaye){i += 1; invis = 0; event_user(0);}
     }
     instance_destroy();
 }
