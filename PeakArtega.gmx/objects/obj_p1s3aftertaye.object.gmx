@@ -172,13 +172,27 @@ else if(i == 40){message = "We don't have any right now, Saiphants is our hub. A
 else if(i == 41){message = "That doesn't make much sense, surely many people send letters to Saiphants."; person = taye; emotion = normal; pal = 0;}
 else if(i == 42){message = "I'm sure they do, but that's not our route."; person = eena; emotion = angry; pal = 0;}
 else if(i == 43){beat = 1; event_user(2);}
-else if(i == 44){message = "That crossbow, hanging";}
+else if(i == 44){message = "That crossbow, hanging from your waist. That looks specially made. Not exactly something a courier would carry around."; person = taye; emotion = normal; pal = 0;}
+else if(i == 45){message = "Look, I don't know what you think we did, or what you think is happening. But we have nothing to do with whatever it is."; person = eena; emotion = scared; pal = 0;}
+else if(i == 46){message = "I don't think I believe you, but you'll have the chance to prove it... later."; person = taye; emotion = angry; pal = 0;}
+else if(i == 47){obj_taye.sprite_index = spr_taye_right; message = "Gaelyn, we're taking all of them for now."; person = taye; emotion = normal;}
 
+else if(i == 49){message = "Anybody move, or anything I don't like, all of you will die. This is Gaelyn, as you can see she is a Vatoliar Officer, and she's working with me in the hunt for the Symic."; person = taye; tal = 0; emotion = normal; pal = 0;}
+else if(i == 50){message = "Your only chance of survival now is to abide by her. Even if you manage to escape, you will have the entire Vatoliar Order against you.";}
+else if(i == 51){thought = 1; message = "Shit. You missed your oportunity to do anything. It's pretty clear Taye knows who you are, does he know you have no memory though? Does he know you were sacrificed?"; person = blank;}
+else if(i == 52){thought = 0; message = "All you have to do to stay alive for now is shut up, and do as told."; person = taye; emotion = normal; pal = 0;}
+else if(i == 53){message = "The man in robes will be near impossible to transfer. Any possibility he will wake?"; person = gaelyn; emotion = normal; pal = 0;}
+else if(i == 54){message = "Probably not."; person = taye; emotion = normal; pal = 0;}
 
+else if(i == 56){message = "No longer a dilemma."; person = gaelyn; emotion = normal; pal = 0;}
+else if(i == 57){message = "WHAT ARE YOU DOING?"; person = eena; emotion = scared; anim = upandex;}
+else if(i == 58){message = "The operation was to eliminate all members of the Symic. The only reason you still breath is because you will assist us in finding Laitha."; person = gaelyn; emotion = normal; pal = 0;}
+else if(i == 59){message = "WE DON'T KNOW WHO THAT IS!"; person = fausto; emotion = angry; anim = ex; pal = 0;}
+else if(i == 60){message = "Of course you're going to deny knowing her. But we don't need you to tell us where she is. We're going to bring you to Saiphants, and she will bring herself out of hiding."; person = taye; emotion = normal; pal = 0;}
+else if(i == 61){message = "I'm positive she will."; person = gaelyn; emotion = angry; pal = 0;}
+else if(i == 62){thought = 1; message = "Laitha. That's the person Corb told you to find... This is not good. You're caught, and have no idea what to do."; person = blank;}
+else if(i == 63){message = "I request everybody to drop your weapons. I will hold them for you, on our way to Saiphants."; person = gaelyn; pal = 0; emotion = normal;}
 
-
-
-//else if(i == 11){
 else if(i == 100){event_user(1);}
 
 messageplace = message;
