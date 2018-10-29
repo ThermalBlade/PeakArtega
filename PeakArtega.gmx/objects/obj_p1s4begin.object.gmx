@@ -25,16 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_createmainmenu();
-l = 1;
-
+            <string>scr_createtextbox();
 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="13">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -51,7 +49,31 @@ l = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>invis = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="12">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>invis = 1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -73,7 +95,8 @@ l = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.move = 0;
+            <string>//global.move = 0;
+instance_create(0, 0, obj_p1s4fadeout);
 instance_destroy();
 </string>
           </argument>
@@ -97,185 +120,45 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>scr_people();
+scr_animations();
+ran = 0;
+
 //else if(i == ){message = ""; person = ; emotion = ; cal = 1; pal = 1; tal = 1;}
-if(i == 0){choice[0] = "Overworld"; choice[1] = "Dungeon"; choice[2] = "Combat"; choice[3] = "Game"; choiceamt = 4;}
-else if(i == 1)
+//else if(i == ){message = ""; timeline_index = cs_; timeline_position = 0; timeline_running = true; event_user(2);}
+//event_user(2); beat = 1;
+//event_user(1);
+//message = string_insert(global.playername + "?", message, string_length(message));
+if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
+else if(i == 1){message = ""; timeline_index = cs_p1s4start; timeline_position = 0; timeline_running = true; event_user(2);}
+else if(i == 2){message = "So you have our weapons, and basically have us under arrest. Could you go over again what we're exactly accused of?"; person = fausto; emotion = angry; pal = 0; tal = 0;}
+else if(i == 3){beat = 1; event_user(2);}
+else if(i == 4){message = "If it's because "; message = string_insert(global.playername + " was with us, we were justt helping him out. We have nothing to do with him!", message, string_length(message)); person = fausto; emotion = normal; pal = 0; tal = 0;}
+else if(i == 5){message = "He's the one who dragged the guy in robes onto our campsite."; emotion = angry;}
+else if(i == 6){message = "Faus, stop."; person = eena; emotion = angry; pal = 0;}
+else if(i == 7){message = "Don't defend him! You're just going to make us look guilty!"; person = fausto; emotion = angry; pal = 0; anim = ex;}
+else if(i == 8){message = "Cut it. As I said, you'll have the opportunity to prove your innocence when we make it to Saiphants."; person = taye; emotion = angry; pal = 0;}
+else if(i == 9){thought = 1; message = "You want to defend yourself. Somehow. Say something. But anything you think to say may just make the situation worse... Everybody walks in silence for a while."; person = blank;}
+else if(i == 10){event_user(1);}
+
+messageplace = message;
+
+if(anim &gt; 0)
 {
-    if(global.choice == 0)
-    {
-        i = 2;
-        event_user(0);
-    }
-    else if(global.choice == 1)
-    {
-        i = 4;
-        event_user(0);
-    }
-    else if(global.choice == 2)
-    {
-        i = 6;
-        event_user(0);
-    }
-    else if(global.choice == 3)
-    {
-        i = 8;
-        event_user(0);
-    }
+    scr_object();
+    instance_create(0, 0, obj_animations);
+    obj_animations.per = personobject;
+    obj_animations.animation = anim;
 }
-else if(i == 2){choice = ""; choice[0] = "Mountain Top"; choice[1] = "Walking Down"; choice[2] = "Stopped Down"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 3)
+if(beat == 1)
 {
-    if(global.choice == 0)
-    {
-        room_goto(rm_mountaintop);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_beforewalkingdownmountain);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_stoppedwalkingdown);
-    }
-    else if(global.choice == 3)
-    {
-        i = 10;
-        event_user(0);
-    }
+    instance_create(0, 0, obj_beat);
+    obj_beat.obj = self;
+    beat = 0;
 }
-else if(i == 4){choice = ""; choice[0] = "Hole In Ground"; choice[1] = "Tutorial"; choice[2] = "Back"; choiceamt = 3;}
-else if(i == 5)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_holeinground);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_starttutorial);
-    }
-    else if(global.choice == 2)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 6){choice = ""; choice[0] = "Slam Dragon"; choice[1] = "Follow Dragon"; choice[2] = "Follow And Slam"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 7)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_slamdragon);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_followdragon);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_3dragons);
-    }
-    else if(global.choice == 3)
-    {
-        i = 14;
-        event_user(0);
-    }
-}
-else if(i == 8){choice = ""; choice[0] = "Coming soon"; choice[1] = "Back"; choiceamt = 2;}
-else if(i == 9)
-{
-    if(global.choice == 0)
-    {
-        i = 0;
-        event_user(0);
-    }
-    else if(global.choice == 1)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 10){choice = ""; choice[0] = "Walking Right"; choice[1] = "Stopped Walking Right"; choice[2] = "Forest Clearing"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 11)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_walkingrightmountain);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_stoppedwalkingright);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_nightclearing);
-    }
-    else if(global.choice == 3)
-    {
-        i = 12;
-        event_user(0);
-    }
-}
-else if(i == 12){choice = ""; choice[0] = "Walking Right Night"; choice[1] = "Walking Right Day"; choice[2] = "Stopped Walking Right Day"; choice[3] = "NILL"; choiceamt = 3;}
-else if(i == 13)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_walkingrightnight);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_walkingrightday);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_daystoppedwalkingright);
-    }   
-    else if(global.choice == 3)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 14){choice = ""; choice[0] = "One Bat"; choice[1] = "Two Bats"; choice[2] = "Follow Slam"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 15)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_onebat);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_twobats);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_2dragons);
-    }
-    else if(global.choice == 3)
-    {
-        i = 16;
-        event_user(0);
-    }
-}
-else if(i == 16){choice = ""; choice[0] = "One Slam One Bat"; choice[1] = "One Bat (again)"; choice[2] = "Back"; choiceamt = 3;}
-else if(i == 17)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_onebatoneslam);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_onebatagain);
-    }
-    else if(global.choice == 2)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
+anim = 0;
+
+scr_things();
 </string>
           </argument>
         </arguments>
@@ -322,8 +205,7 @@ ds_list_destroy(start);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_drawmainmenu();
-
+            <string>scr_drawtextgui();
 </string>
           </argument>
         </arguments>

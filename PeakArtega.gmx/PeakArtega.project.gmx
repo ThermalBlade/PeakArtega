@@ -18,6 +18,7 @@
       <sound>sound\snd_unsheath</sound>
       <sound>sound\snd_quietunsheath</sound>
       <sound>sound\snd_sheathing</sound>
+      <sound>sound\snd_gunshot</sound>
     </sounds>
     <sounds name="Soundtrack">
       <sound>sound\snd_OPTitleScreen</sound>
@@ -83,6 +84,7 @@
           <sprite>sprites\spr_corbeyesclosed</sprite>
           <sprite>sprites\spr_corb_right</sprite>
           <sprite>sprites\spr_corbbeingdragged</sprite>
+          <sprite>sprites\spr_corbshot</sprite>
           <sprite>sprites\spr_corb_left</sprite>
           <sprite>sprites\spr_corb_up</sprite>
         </sprites>
@@ -216,6 +218,7 @@
           <sprite>sprites\spr_gaelyn_left</sprite>
           <sprite>sprites\spr_gaelyn_right</sprite>
           <sprite>sprites\spr_gaelyn_down</sprite>
+          <sprite>sprites\spr_gaelyn_gundown</sprite>
           <sprite>sprites\spr_gaelyn_up</sprite>
         </sprites>
         <sprites name="Sprint">
@@ -742,9 +745,25 @@
         </objects>
         <objects name="Scene Three">
           <object>objects\obj_p1s3beforeclearing</object>
+          <object>objects\obj_naming</object>
+          <object>objects\obj_p1s3faustotocorb</object>
           <object>objects\obj_p1s3begin</object>
+          <object>objects\obj_p1s3eenatocorb</object>
+          <object>objects\obj_p1s3MCtoEena</object>
+          <object>objects\obj_p1s3taytocenter</object>
+          <object>objects\obj_p1s3eenatofire</object>
+          <object>objects\obj_p1s3taytocamp</object>
+          <object>objects\obj_p1s3gaelynenter</object>
           <object>objects\obj_p1s3namesure</object>
           <object>objects\obj_p1s3aftertaye</object>
+          <object>objects\obj_p1s3fadeout</object>
+          <object>objects\obj_p1s3gaelynshoot</object>
+        </objects>
+        <objects name="Scene Four">
+          <object>objects\obj_p1s4before</object>
+          <object>objects\obj_p1s4begin</object>
+          <object>objects\obj_p1s4fadeout</object>
+          <object>objects\obj_walkingrightnightscrollcontroller</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
@@ -980,13 +999,6 @@
     <object>objects\obj_playOPTitle</object>
     <object>objects\obj_playOPTitleTitle</object>
     <object>objects\obj_beat</object>
-    <object>objects\obj_p1s3eenatocorb</object>
-    <object>objects\obj_p1s3faustotocorb</object>
-    <object>objects\obj_p1s3eenatofire</object>
-    <object>objects\obj_p1s3MCtoEena</object>
-    <object>objects\obj_p1s3taytocamp</object>
-    <object>objects\obj_p1s3taytocenter</object>
-    <object>objects\obj_naming</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -1008,6 +1020,11 @@
       <timeline>timelines\cs_p1s3dragcorb</timeline>
       <timeline>timelines\cs_p1s3eenatocorb</timeline>
       <timeline>timelines\cs_p1s3tayesuprise</timeline>
+      <timeline>timelines\cs_p1s3gaelynsuprise</timeline>
+    </timelines>
+    <timelines name="a1s4">
+      <timeline>timelines\cs_p1s4start</timeline>
+      <timeline>timelines\cs_p1s5start</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">
@@ -1024,11 +1041,14 @@
       <room>rooms\rm_stoppedwalkingdown</room>
       <room>rooms\rm_beforeforestclearing</room>
       <room>rooms\rm_nightclearing</room>
-      <room>rooms\rm_walkingrightmountain</room>
+      <room>rooms\rm_beforep1s4</room>
+      <room>rooms\rm_walkingrightnight</room>
+      <room>rooms\rm_beforewalkingrightday</room>
       <room>rooms\rm_walkingrightday</room>
       <room>rooms\rm_daystoppedwalkingright</room>
     </rooms>
     <room>rooms\rm_holeinground</room>
+    <room>rooms\rm_walkingrightmountain</room>
     <room>rooms\rm_1dun2</room>
     <room>rooms\rm_1dun3</room>
     <room>rooms\rm_test</room>

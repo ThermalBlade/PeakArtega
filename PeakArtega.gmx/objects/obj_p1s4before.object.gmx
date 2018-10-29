@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_createmainmenu();
-l = 1;
-
+            <string>scr_createtextbox();
+//audio_master_gain(global.volume);
 
 </string>
           </argument>
@@ -51,7 +50,35 @@ l = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>scr_get_menuinput();
+if(escape_key || cescape_key)
+{
+    instance_create(0, 0, obj_exiting);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="12">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>invis = 1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -74,6 +101,7 @@ l = 1;
           <argument>
             <kind>1</kind>
             <string>global.move = 0;
+room_goto(rm_walkingrightnight);
 instance_destroy();
 </string>
           </argument>
@@ -97,185 +125,21 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>scr_people();
+ran = 0;
+
 //else if(i == ){message = ""; person = ; emotion = ; cal = 1; pal = 1; tal = 1;}
-if(i == 0){choice[0] = "Overworld"; choice[1] = "Dungeon"; choice[2] = "Combat"; choice[3] = "Game"; choiceamt = 4;}
-else if(i == 1)
-{
-    if(global.choice == 0)
-    {
-        i = 2;
-        event_user(0);
-    }
-    else if(global.choice == 1)
-    {
-        i = 4;
-        event_user(0);
-    }
-    else if(global.choice == 2)
-    {
-        i = 6;
-        event_user(0);
-    }
-    else if(global.choice == 3)
-    {
-        i = 8;
-        event_user(0);
-    }
-}
-else if(i == 2){choice = ""; choice[0] = "Mountain Top"; choice[1] = "Walking Down"; choice[2] = "Stopped Down"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 3)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_mountaintop);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_beforewalkingdownmountain);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_stoppedwalkingdown);
-    }
-    else if(global.choice == 3)
-    {
-        i = 10;
-        event_user(0);
-    }
-}
-else if(i == 4){choice = ""; choice[0] = "Hole In Ground"; choice[1] = "Tutorial"; choice[2] = "Back"; choiceamt = 3;}
-else if(i == 5)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_holeinground);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_starttutorial);
-    }
-    else if(global.choice == 2)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 6){choice = ""; choice[0] = "Slam Dragon"; choice[1] = "Follow Dragon"; choice[2] = "Follow And Slam"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 7)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_slamdragon);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_followdragon);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_3dragons);
-    }
-    else if(global.choice == 3)
-    {
-        i = 14;
-        event_user(0);
-    }
-}
-else if(i == 8){choice = ""; choice[0] = "Coming soon"; choice[1] = "Back"; choiceamt = 2;}
-else if(i == 9)
-{
-    if(global.choice == 0)
-    {
-        i = 0;
-        event_user(0);
-    }
-    else if(global.choice == 1)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 10){choice = ""; choice[0] = "Walking Right"; choice[1] = "Stopped Walking Right"; choice[2] = "Forest Clearing"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 11)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_walkingrightmountain);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_stoppedwalkingright);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_nightclearing);
-    }
-    else if(global.choice == 3)
-    {
-        i = 12;
-        event_user(0);
-    }
-}
-else if(i == 12){choice = ""; choice[0] = "Walking Right Night"; choice[1] = "Walking Right Day"; choice[2] = "Stopped Walking Right Day"; choice[3] = "NILL"; choiceamt = 3;}
-else if(i == 13)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_walkingrightnight);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_walkingrightday);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_daystoppedwalkingright);
-    }   
-    else if(global.choice == 3)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
-else if(i == 14){choice = ""; choice[0] = "One Bat"; choice[1] = "Two Bats"; choice[2] = "Follow Slam"; choice[3] = "Next"; choiceamt = 4;}
-else if(i == 15)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_onebat);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_twobats);
-    }
-    else if(global.choice == 2)
-    {
-        room_goto(rm_2dragons);
-    }
-    else if(global.choice == 3)
-    {
-        i = 16;
-        event_user(0);
-    }
-}
-else if(i == 16){choice = ""; choice[0] = "One Slam One Bat"; choice[1] = "One Bat (again)"; choice[2] = "Back"; choiceamt = 3;}
-else if(i == 17)
-{
-    if(global.choice == 0)
-    {
-        room_goto(rm_onebatoneslam);
-    }
-    else if(global.choice == 1)
-    {
-        room_goto(rm_onebatagain);
-    }
-    else if(global.choice == 2)
-    {
-        i = 0;
-        event_user(0);
-    }
-}
+if(i == 0){message = ""; choice = ""; person = blank; emotion = blank;}
+else if(i == 1){message = "If you fight now, you think you'll die. At this point, as long as you surrender your weapon, you'll still be alive."; person = blank; emotion = normal; cal = 0; pal = 0; tal = 0; choiceamt = 0;}
+else if(i == 2){message = "You reluctantly surrender the sword you picked up earlier tonight. Without saying anything, you're guided away from the camp by Gaelyn.";}
+else if(i == 3){message = "Your mind races on how you can get away from this, but almost everything you can think of puts your life in danger.";}
+else if(i == 4){message = "It seems clear they know who you are, at least to some extent. So for now you take Taye's advice and shut up, thinking of ways to get out of this.";}
+else if(i == 5){message = "Everybody walked in silence for a while.";}
+else if(i == 6){event_user(1);}
+
+messageplace = message;
+
+scr_things();
 </string>
           </argument>
         </arguments>
@@ -322,8 +186,7 @@ ds_list_destroy(start);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_drawmainmenu();
-
+            <string>scr_drawbeforecs1textgui();
 </string>
           </argument>
         </arguments>
