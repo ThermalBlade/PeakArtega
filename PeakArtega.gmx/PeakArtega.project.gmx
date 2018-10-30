@@ -761,6 +761,8 @@
         </objects>
         <objects name="Scene Four">
           <object>objects\obj_p1s4before</object>
+          <object>objects\obj_p1s4beforedun</object>
+          <object>objects\obj_p1s4beforebeforedun</object>
           <object>objects\obj_p1s4begin</object>
           <object>objects\obj_p1s4fadeout</object>
           <object>objects\obj_walkingrightnightscrollcontroller</object>
@@ -1025,6 +1027,7 @@
     <timelines name="a1s4">
       <timeline>timelines\cs_p1s4start</timeline>
       <timeline>timelines\cs_p1s5start</timeline>
+      <timeline>timelines\cs_p1s4beforedun</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">
