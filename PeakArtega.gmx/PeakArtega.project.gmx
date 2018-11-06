@@ -28,6 +28,10 @@
       <sound>sound\snd_dia2</sound>
       <sound>sound\snd_dia3</sound>
     </sounds>
+    <sound>sound\sound19</sound>
+    <sound>sound\snd_earthquake</sound>
+    <sound>sound\snd_event1</sound>
+    <sound>sound\snd_event1beg</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Misc">
@@ -467,6 +471,7 @@
     <sprite>sprites\spr_backdone</sprite>
     <sprite>sprites\spr_entertut</sprite>
     <sprite>sprites\spr_snowtree</sprite>
+    <sprite>sprites\spr_planning</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Backdrops">
@@ -765,7 +770,14 @@
           <object>objects\obj_p1s4beforebeforedun</object>
           <object>objects\obj_p1s4begin</object>
           <object>objects\obj_p1s4fadeout</object>
+          <object>objects\obj_p1s42fadeout</object>
           <object>objects\obj_walkingrightnightscrollcontroller</object>
+        </objects>
+        <objects name="Scene Five">
+          <object>objects\obj_p1s5beforeattack</object>
+          <object>objects\obj_p1s5walktostop</object>
+          <object>objects\obj_p1s5dragon</object>
+          <object>objects\obj_p1s5entermonster</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
@@ -999,6 +1011,7 @@
     <object>objects\obj_corboutline2</object>
     <object>objects\obj_shirtshoesoutline</object>
     <object>objects\obj_playOPTitle</object>
+    <object>objects\obj_playevent1</object>
     <object>objects\obj_playOPTitleTitle</object>
     <object>objects\obj_beat</object>
   </objects>
@@ -1054,6 +1067,7 @@
     <room>rooms\rm_walkingrightmountain</room>
     <room>rooms\rm_1dun2</room>
     <room>rooms\rm_1dun3</room>
+    <room>rooms\rm_1dun4</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_starttutorial</room>
     <room>rooms\rm_dundun</room>

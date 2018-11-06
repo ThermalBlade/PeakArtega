@@ -3,12 +3,12 @@
   <caption></caption>
   <width>1000</width>
   <height>1000</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>7039851</colour>
+  <colour>6579300</colour>
   <showcolour>-1</showcolour>
   <code>instance_create(0, 0, obj_fadein);</code>
   <enableViews>-1</enableViews>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_player" x="484" y="426" name="inst_25A0C23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="441" y="426" name="inst_25A0C23C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="544" y="464" name="inst_1D44F8D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snowparta1s23" x="576" y="320" name="inst_98226FFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="496" y="432" name="inst_CD009721" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -60,7 +60,6 @@
     <instance objName="obj_riverreflect" x="608" y="320" name="inst_2217BEE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="528" y="416" name="inst_0E9E2978" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="496" y="416" name="inst_5B440502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_upperriver" x="464" y="416" name="inst_C5EA3BA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="560" y="432" name="inst_1C0529DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="592" y="432" name="inst_8FB63395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="624" y="432" name="inst_2CBF411E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -71,7 +70,6 @@
     <instance objName="obj_upperriver" x="624" y="416" name="inst_B2A3E9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="656" y="416" name="inst_8608E7C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="688" y="416" name="inst_986164D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_upperriver" x="432" y="416" name="inst_1478AFB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="400" y="416" name="inst_C9AE2F56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="368" y="416" name="inst_3831BC45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="432" y="432" name="inst_AC157C15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -82,7 +80,7 @@
     <instance objName="obj_upperriver" x="720" y="416" name="inst_BCF18BDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river" x="720" y="432" name="inst_8AA2FCA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river2" x="496" y="448" name="inst_F2263D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_river2" x="528" y="448" name="inst_8784467D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_river2" x="528" y="432" name="inst_8784467D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river2" x="464" y="448" name="inst_5D6F9BBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river2" x="560" y="448" name="inst_96244040" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river2" x="432" y="448" name="inst_B62C2718" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -100,7 +98,6 @@
     <instance objName="obj_river3" x="656" y="464" name="inst_080251E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river3" x="624" y="464" name="inst_030189FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river3" x="560" y="464" name="inst_0C787823" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_river3" x="528" y="464" name="inst_27E2F9A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river3" x="496" y="464" name="inst_93ADA927" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river3" x="464" y="464" name="inst_B77178C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_river3" x="432" y="464" name="inst_17677544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -141,23 +138,27 @@
     <instance objName="obj_daywalkrightmovingdebris" x="352" y="416" name="inst_8930D336" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_daywalkrightmovingdebris" x="730" y="505" name="inst_43352B0F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_daywalkrightmovingdebris" x="637" y="510" name="inst_62DC2F64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_daywalkrightmovingdebris" x="510" y="502" name="inst_27EEA8D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_daywalkrightmovingdebris" x="496" y="512" name="inst_27EEA8D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lowerriver" x="432" y="496" name="inst_BF603F5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_daywalkrightmovingdebris" x="358" y="501" name="inst_165DF22E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dayrightmovingtrees" x="655" y="486" name="inst_F87B4229" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dayrightmovingtrees" x="566" y="505" name="inst_6DFDBC38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dayrightmovingtrees" x="506" y="481" name="inst_7101F860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dayrightmovingtrees" x="512" y="512" name="inst_7101F860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dayrightmovingtrees" x="343" y="495" name="inst_B20E3A9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dayrightmovingtrees" x="436" y="507" name="inst_F050EBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dayrightmovingtrees" x="392" y="482" name="inst_03C78CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dayrightmovingtrees" x="448" y="496" name="inst_F050EBBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dayrightmovingtrees" x="400" y="512" name="inst_03C78CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dayrightmovingtrees" x="703" y="509" name="inst_0B499333" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_walkingrightdayscrollcontroller" x="560" y="320" name="inst_3A58DB2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_taye" x="509" y="423" name="inst_173EE7AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_eena" x="454" y="426" name="inst_40F49B3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fausto" x="427" y="416" name="inst_3CB2A022" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_gaelyn" x="394" y="425" name="inst_AA21511A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_taye" x="522" y="416" name="inst_173EE7AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_eena" x="492" y="428" name="inst_40F49B3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fausto" x="464" y="416" name="inst_3CB2A022" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_gaelyn" x="416" y="416" name="inst_AA21511A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_walkingrightdaywalking" x="544" y="320" name="inst_8204E187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_p1s4beforedun" x="524" y="343" name="inst_166859ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_river2" x="528" y="448" name="inst_AEFB2BFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_river3" x="528" y="464" name="inst_941605A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_upperriver" x="432" y="416" name="inst_28B178E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_upperriver" x="464" y="416" name="inst_46F30CDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="608" y="512" w="16" h="16" xo="0" yo="0" id="10008012" name="inst_35FC230F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

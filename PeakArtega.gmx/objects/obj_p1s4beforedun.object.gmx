@@ -97,7 +97,7 @@ global.music = audio_play_sound(snd_dia3, 0, true);
           <argument>
             <kind>1</kind>
             <string>//global.move = 0;
-instance_create(0, 0, obj_p1s2fadeout);
+instance_create(0, 0, obj_p1s42fadeout);
 instance_destroy();
 </string>
           </argument>
@@ -148,8 +148,13 @@ else if(i == 15){message = "I know... It was still worth asking."; person = faus
 else if(i == 16){beat = 1; event_user(2);}
 else if(i == 17){message = "So how much are you getting paid for this Taye? How much does a bounty hunter get to arrest innocent people."; person = fausto; emotion = normal; anim = que;}
 else if(i == 18){message = "Let's just say you're worth a hell of a lot... If you're gonna keep talking, talk to somebody else."; person = taye; emotion = angry; pal = 0;}
-//else if(i == 19){
-else if(i == 44){event_user(1);}
+else if(i == 19){message = "Fair enough. "; message = string_insert(global.playername + ". Could ya tell these people we have nothing to do with whatever it is you're involved with?", message, string_length(message)); person = fausto; emotion = normal; pal = 0;}
+else if(i == 20){thought = 1; message = "Honestly, you're pretty sure Fausto and Eena are innocent. Corb mentioned nothing of them, and you're sure he would have otherwise. But keeping them involved may work to your benifit."; person = blank; pal = 0;}
+else if(i == 21){message = "In a best-case scenario, Eena and Fausto may help you fight Gaelyn and Taye. You don't think your words hold much weight anyhow, but you don't want them going anywhere for now.";}
+else if(i == 22){thought = 0; message = "There's a possibility he isn't even aware if you two are involved."; person = gaelyn; emotion = normal; pal = 0;}
+else if(i == 23){message = "What does that mean?"; person = eena; emotion = suprised; anim = que; pal = 0;}
+else if(i == 24){thought = 1; message = "You all hear a sound coming from the ground, as if it was shaking. Gaelyn makes everybody keep walking, but nobody speaks for a few moments."; person = blank; audio_sound_gain(global.music, 0, 1000); audio_play_sound(snd_earthquake, 10, false);}
+else if(i == 25){event_user(1);}
 
 messageplace = message;
 

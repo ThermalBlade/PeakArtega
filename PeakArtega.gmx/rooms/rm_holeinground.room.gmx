@@ -2081,7 +2081,6 @@
     <tile bgName="bg_stonecave" x="208" y="32" w="16" h="16" xo="48" yo="16" id="10017816" name="inst_1842EFA9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="224" y="32" w="16" h="16" xo="48" yo="16" id="10017817" name="inst_A2A4FC60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="240" y="32" w="16" h="16" xo="48" yo="16" id="10017818" name="inst_57370087" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_stonecave" x="256" y="32" w="16" h="16" xo="48" yo="16" id="10017819" name="inst_1082B828" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="272" y="32" w="16" h="16" xo="48" yo="16" id="10017820" name="inst_F7C0C2B9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="288" y="32" w="16" h="16" xo="48" yo="16" id="10017821" name="inst_5AE05C94" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="304" y="32" w="16" h="16" xo="48" yo="16" id="10017822" name="inst_E4A3EB47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3584,6 +3583,7 @@
     <tile bgName="bg_stonecave" x="112" y="512" w="16" h="16" xo="192" yo="0" id="10025796" name="inst_B3EBCF48" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="144" y="544" w="16" h="16" xo="208" yo="32" id="10025797" name="inst_5BD55A9D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="128" y="544" w="16" h="16" xo="208" yo="32" id="10025798" name="inst_F4C86FDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_snowyforest" x="256" y="32" w="16" h="16" xo="64" yo="16" id="10036199" name="inst_5D44B608" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="608" y="144" w="16" h="16" xo="32" yo="16" id="10016318" name="inst_3F147FDA" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="608" y="160" w="16" h="16" xo="32" yo="16" id="10016319" name="inst_78157528" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_stonecave" x="560" y="176" w="16" h="16" xo="16" yo="16" id="10016320" name="inst_33A0978C" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

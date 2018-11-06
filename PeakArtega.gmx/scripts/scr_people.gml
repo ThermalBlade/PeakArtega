@@ -21,3 +21,5 @@ happy = 2;
 angry = 3;
 scared = 4;
 suprised = 4;
+
+ran = 0;
