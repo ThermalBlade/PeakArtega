@@ -32,6 +32,7 @@
     <sound>sound\snd_earthquake</sound>
     <sound>sound\snd_event1</sound>
     <sound>sound\snd_event1beg</sound>
+    <sound>sound\snd_hit</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Misc">
@@ -374,6 +375,7 @@
             <sprite>sprites\spr_dr1down</sprite>
             <sprite>sprites\spr_dr1up</sprite>
             <sprite>sprites\spr_dr1right</sprite>
+            <sprite>sprites\spr_dr1rightstrike</sprite>
             <sprite>sprites\spr_dr1left</sprite>
             <sprite>sprites\spr_dr1jump</sprite>
             <sprite>sprites\spr_dr1dying</sprite>
@@ -596,7 +598,10 @@
       <object>objects\obj_mute</object>
       <object>objects\obj_highwindy</object>
       <object>objects\obj_titlehighwindy</object>
+      <object>objects\obj_playOPTitleTitle</object>
+      <object>objects\obj_playOPTitle</object>
       <object>objects\obj_checkForController</object>
+      <object>objects\obj_beat</object>
     </objects>
     <objects name="Characters">
       <object>objects\obj_player</object>
@@ -1010,10 +1015,8 @@
     <object>objects\obj_corboutline</object>
     <object>objects\obj_corboutline2</object>
     <object>objects\obj_shirtshoesoutline</object>
-    <object>objects\obj_playOPTitle</object>
     <object>objects\obj_playevent1</object>
-    <object>objects\obj_playOPTitleTitle</object>
-    <object>objects\obj_beat</object>
+    <object>objects\obj_lrightslice</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -1036,6 +1039,7 @@
       <timeline>timelines\cs_p1s3eenatocorb</timeline>
       <timeline>timelines\cs_p1s3tayesuprise</timeline>
       <timeline>timelines\cs_p1s3gaelynsuprise</timeline>
+      <timeline>timelines\cs_p1s5supriseeverybody</timeline>
     </timelines>
     <timelines name="a1s4">
       <timeline>timelines\cs_p1s4start</timeline>

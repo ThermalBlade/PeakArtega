@@ -28,7 +28,7 @@
             <string>phy_fixed_rotation = true;
 image_speed = .1;
 sprite_index = spr_dr1right;
-
+walkingup = 1;
 
 
 
@@ -56,7 +56,10 @@ sprite_index = spr_dr1right;
           <argument>
             <kind>1</kind>
             <string>depth = -y;
-phy_position_x += 1;
+if(walkingup == 1)
+{
+    phy_position_x += 1;
+}
 </string>
           </argument>
         </arguments>
