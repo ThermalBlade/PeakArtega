@@ -111,6 +111,7 @@
             <sprite>sprites\spr_player_right</sprite>
             <sprite>sprites\spr_player_left</sprite>
             <sprite>sprites\spr_player_down</sprite>
+            <sprite>sprites\spr_player_downslide</sprite>
             <sprite>sprites\spr_player_up</sprite>
           </sprites>
           <sprites name="Sprint">
@@ -378,6 +379,7 @@
             <sprite>sprites\spr_dr1rightstrike</sprite>
             <sprite>sprites\spr_dr1left</sprite>
             <sprite>sprites\spr_dr1jump</sprite>
+            <sprite>sprites\spr_dr1slide</sprite>
             <sprite>sprites\spr_dr1dying</sprite>
             <sprite>sprites\spr_dr1downwhite</sprite>
           </sprites>
@@ -782,6 +784,7 @@
           <object>objects\obj_p1s5beforeattack</object>
           <object>objects\obj_p1s5walktostop</object>
           <object>objects\obj_p1s5dragon</object>
+          <object>objects\obj_p1s5fadeout</object>
           <object>objects\obj_p1s5entermonster</object>
         </objects>
       </objects>
@@ -1040,6 +1043,7 @@
       <timeline>timelines\cs_p1s3tayesuprise</timeline>
       <timeline>timelines\cs_p1s3gaelynsuprise</timeline>
       <timeline>timelines\cs_p1s5supriseeverybody</timeline>
+      <timeline>timelines\cs_p1s5suprisesome</timeline>
     </timelines>
     <timelines name="a1s4">
       <timeline>timelines\cs_p1s4start</timeline>
