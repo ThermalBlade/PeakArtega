@@ -59,14 +59,6 @@ anim  = 0;
     obj_p1s5dragon.walkingup = 0;
     obj_player.image_speed = 0;
     obj_player.image_index = 0;
-    obj_eena.image_speed = 0;
-    obj_eena.image_index = 0;
-    obj_gaelyn.image_speed = 0;
-    obj_gaelyn.image_index = 0;
-    obj_taye.image_speed = 0;
-    obj_taye.image_index = 0;
-    obj_fausto.image_speed = 0;
-    obj_fausto.image_index = 0;
     obj_p1s5dragon.image_speed = 0;
     obj_p1s5dragon.image_index = 0;
     anim = 1;
@@ -104,6 +96,14 @@ if(anim == 1)
     obj_p1s5dragon.image_speed = 0.1;
     if(obj_p1s5dragon.image_index &gt;= 3)
     {
+        obj_eena.image_speed = 0;
+        obj_eena.image_index = 0;
+        obj_gaelyn.image_speed = 0;
+        obj_gaelyn.image_index = 0;
+        obj_taye.image_speed = 0;
+        obj_taye.image_index = 0;
+        obj_fausto.image_speed = 0;
+        obj_fausto.image_index = 0;
         obj_gaelyn.sprite_index = spr_gaelyn_down;
         obj_fausto.sprite_index = spr_fausto_down;
         obj_eena.sprite_index = spr_eena_down;
@@ -113,6 +113,21 @@ if(anim == 1)
         anim = 2;
         knockback = 5;
         audio_play_sound(snd_hit, 0, false);
+    }
+    else
+    {
+        obj_fausto.phy_position_x += 1;
+        obj_fausto.image_speed = .1;
+        obj_fausto.sprite_index = spr_fausto_rightsprint;
+        obj_taye.phy_position_x += 1;
+        obj_taye.image_speed = .1;
+        obj_taye.sprite_index = spr_taye_rightsprint;
+        obj_eena.phy_position_x += 1;
+        obj_eena.image_speed = .1;
+        obj_eena.sprite_index = spr_eena_rightsprint;
+        obj_gaelyn.phy_position_x += 1;
+        obj_gaelyn.image_speed = .1;
+        obj_gaelyn.sprite_index = spr_gaelyn_rightsprint;
     }
 }
 else if(anim == 2)
@@ -153,19 +168,56 @@ else if(anim == 3)
 }
 else if(anim == 4)
 {
-    obj_p1s5dragon.phy_position_y += 1;
+    obj_p1s5dragon.phy_position_y += 1.5;
     obj_player.phy_position_y += 1;
     with(obj_player){if(place_meeting(x, y, obj_mapping)){obj_p1s5entermonster.anim += 1;}}
     global.camx = obj_player.x;
     global.camy = obj_player.y;
-    obj_p1s5dragon.sprite_index = spr_dr1down;
+    obj_p1s5dragon.sprite_index = spr_dr1downheadbutt;
     obj_p1s5dragon.image_speed = 0.1;
 }
 else if(anim == 5)
 {
+    obj_player.image_speed = 0;
+    obj_player.image_index = 0;
+    obj_player.sprite_index = spr_player_up;
+    obj_p1s5dragon.phy_position_y += 1.5;
+    with(obj_p1s5dragon){if(place_meeting(x, y, obj_dun12incdepth)){obj_p1s5entermonster.anim += 1; audio_play_sound(snd_hit, 0, false);}}
+}
+else if(anim == 6)
+{
+    obj_p1s5dragon.image_speed = 0;
+    obj_p1s5dragon.image_index = 0;
+    obj_p1s5dragon.sprite_index = spr_dr1down;
+    obj_player.sprite_index = spr_player_rolling;
+    obj_player.image_speed = .15;
+    obj_player.phy_position_y += 1.5;
+    global.camx = obj_player.x;
+    global.camy = obj_player.y;
+    with(obj_player){if(place_meeting(x, y, obj_wall)){obj_p1s5entermonster.anim += 1;}}
+}
+else if(anim == 7)
+{
+    obj_player.sprite_index = spr_player_gettingup;
+    obj_player.image_speed = 0.05;
+    if(obj_player.image_index &gt;= 4)
+    {
+        anim += 1;
+    }
+}
+else if(anim == 8)
+{
+    obj_player.sprite_index = spr_player_downsprint;
+    obj_player.image_speed = 0.1;
+    obj_player.phy_position_y += 1;
+    global.camx = obj_player.x;
+    global.camy = obj_player.y;
+}
+/*else if(anim == 5)
+{
     obj_p1s5dragon.phy_position_y += 1;
-    obj_player.phy_position_y += 0.65;
-    with(obj_p1s5dragon){if(place_meeting(x, y, obj_mapping)){obj_p1s5entermonster.anim += 1;}}
+    obj_player.phy_position_y += 0.6;
+    with(obj_p1s5dragon){if(place_meeting(x, y, obj_dun12incdepth)){obj_p1s5entermonster.anim += 1;}}
     obj_player.image_speed = .1;
     obj_player.sprite_index = spr_player_downslide;
     global.camx = obj_player.x;
@@ -173,35 +225,40 @@ else if(anim == 5)
 }
 else if(anim == 6)
 {
-    obj_p1s5dragon.phy_position_y += 0.65;
-    obj_player.phy_position_y += 0.65;
+    //obj_p1s5dragon.phy_position_y += 0.5;
+    obj_player.phy_position_y += 0.6;
     with(obj_player){if(place_meeting(x, y, obj_wall)){obj_p1s5entermonster.anim += 1;}}
     obj_player.image_speed = .1;
     obj_player.sprite_index = spr_player_downslide;
-    obj_p1s5dragon.sprite_index = spr_dr1slide;
+    //obj_p1s5dragon.sprite_index = spr_dr1slide;
+    obj_p1s5dragon.image_speed = 0;
+    obj_p1s5dragon.image_index = 0;
     global.camx = obj_player.x;
     global.camy = obj_player.y;
 }
 else if(anim == 7)
 {
-    obj_p1s5dragon.phy_position_y += 0.65;
+    //obj_p1s5dragon.phy_position_y += 0.5;
     obj_player.phy_position_y += 1;
-    with(obj_p1s5dragon){if(place_meeting(x, y, obj_wall)){obj_p1s5entermonster.anim += 1;}}
-    obj_player.sprite_index = spr_player_down;
-    obj_p1s5dragon.sprite_index = spr_dr1slide;
+    if(obj_player.y &gt;= 592)
+    {
+        anim += 1;
+    }
+    obj_player.sprite_index = spr_player_downsprint;
+    //obj_p1s5dragon.sprite_index = spr_dr1slide;
     global.camx = obj_player.x;
     global.camy = obj_player.y;
 }
 else if(anim == 8)
 {
-    obj_p1s5dragon.phy_position_y += 1;
+    //obj_p1s5dragon.phy_position_y += 1;
     obj_player.phy_position_y += 1;
-    obj_player.sprite_index = spr_player_down;
-    obj_p1s5dragon.sprite_index = spr_dr1down;
-    global.camx = obj_p1s5dragon.x;
-    global.camy = obj_p1s5dragon.y;
+    obj_player.sprite_index = spr_player_downsprint;
+    //obj_p1s5dragon.sprite_index = spr_dr1down;
+    //global.camx = obj_p1s5dragon.x;
+    //global.camy = obj_p1s5dragon.y;
     instance_create(0, 0, obj_p1s5fadeout)
-}
+}*/
 </string>
           </argument>
         </arguments>

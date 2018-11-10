@@ -111,8 +111,9 @@
             <sprite>sprites\spr_player_right</sprite>
             <sprite>sprites\spr_player_left</sprite>
             <sprite>sprites\spr_player_down</sprite>
-            <sprite>sprites\spr_player_downslide</sprite>
             <sprite>sprites\spr_player_up</sprite>
+            <sprite>sprites\spr_player_rolling</sprite>
+            <sprite>sprites\spr_player_gettingup</sprite>
           </sprites>
           <sprites name="Sprint">
             <sprite>sprites\spr_player_upsprint</sprite>
@@ -151,6 +152,7 @@
             <sprite>sprites\spr_playerleftdied</sprite>
             <sprite>sprites\spr_playerupdied</sprite>
           </sprites>
+          <sprite>sprites\spr_player_downslide</sprite>
           <sprite>sprites\spr_playerdragcorb</sprite>
         </sprites>
         <sprites name="MC Shirtless">
@@ -374,6 +376,7 @@
         <sprites name="Ddragon1">
           <sprites name="Walking">
             <sprite>sprites\spr_dr1down</sprite>
+            <sprite>sprites\spr_dr1downheadbutt</sprite>
             <sprite>sprites\spr_dr1up</sprite>
             <sprite>sprites\spr_dr1right</sprite>
             <sprite>sprites\spr_dr1rightstrike</sprite>

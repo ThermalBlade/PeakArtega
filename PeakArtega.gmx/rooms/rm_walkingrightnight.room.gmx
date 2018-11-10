@@ -163,6 +163,7 @@
     <instance objName="obj_daywalkrightmovingdebris" x="752" y="304" name="inst_B540CE97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_daywalkrightmovingdebris" x="736" y="400" name="inst_68A1B7C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_p1s4begin" x="624" y="288" name="inst_31B887F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saving" x="512" y="272" name="inst_D163ED3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="608" y="512" w="16" h="16" xo="0" yo="0" id="10008012" name="inst_35FC230F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

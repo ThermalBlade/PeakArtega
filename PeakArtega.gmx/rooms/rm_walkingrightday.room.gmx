@@ -159,6 +159,7 @@
     <instance objName="obj_river3" x="528" y="464" name="inst_941605A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="432" y="416" name="inst_28B178E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_upperriver" x="464" y="416" name="inst_46F30CDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saving" x="512" y="304" name="inst_95AB5427" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="608" y="512" w="16" h="16" xo="0" yo="0" id="10008012" name="inst_35FC230F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

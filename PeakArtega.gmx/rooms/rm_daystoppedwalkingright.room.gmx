@@ -59,8 +59,10 @@
     <instance objName="obj_daystoppedrightscroll" x="603" y="353" name="inst_0D244EA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="32" y="400" name="inst_3C2B8A81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_p1s5walktostop" x="288" y="416" name="inst_70DEA41A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mapping" x="416" y="518" name="inst_836266B1" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="432" y="569" name="inst_4CDD3BB5" locked="0" code="" scaleX="3.0625" scaleY="0.483870953321457" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mapping" x="416" y="512" name="inst_836266B1" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="432" y="566" name="inst_4CDD3BB5" locked="0" code="" scaleX="3.0625" scaleY="0.483870953321457" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dun12incdepth" x="432" y="507" name="inst_C5BC0CEC" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_saving" x="336" y="336" name="inst_78922B58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="608" y="512" w="16" h="16" xo="0" yo="0" id="10008012" name="inst_35FC230F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
