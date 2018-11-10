@@ -58,11 +58,7 @@ if(nalpha &lt;= 1)
 }
 else
 {
-    timer += 1;
-    if(timer == 10)
-    {
-        room_goto(rm_holeinground);
-    }
+    room_goto(rm_holeinground);
 }
 draw_set_alpha(nalpha);
 draw_sprite_stretched(Black, 0, -5, -5, 1930, 1090);

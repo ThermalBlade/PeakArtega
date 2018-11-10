@@ -41,7 +41,7 @@
     <background visible="-1" foreground="-1" name="bg_grey" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_dungeonview" xview="0" yview="0" wview="320" hview="180" xport="0" yport="0" wport="1280" hport="720" hborder="128" vborder="64" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_view" xview="0" yview="0" wview="320" hview="180" xport="0" yport="0" wport="1280" hport="720" hborder="128" vborder="64" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,11 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_holeingroundduncontrol" x="544" y="64" name="inst_C00F5E87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeonplayer" x="480" y="160" name="inst_6CABB44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungeonview" x="496" y="144" name="inst_0C2F5253" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_initiatedungeon" x="560" y="64" name="inst_64CEBC6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dungui" x="576" y="64" name="inst_603A8267" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="386" y="352" name="inst_50D7F5D0" locked="0" code="" scaleX="8" scaleY="3.80999994277954" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="512" y="384" name="inst_232C328F" locked="0" code="" scaleX="5.875" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="482" y="413" name="inst_433FE1E8" locked="0" code="" scaleX="7.75" scaleY="2" colour="4294967295" rotation="0"/>
@@ -95,6 +90,9 @@
     <instance objName="obj_holeinboulder" x="448" y="448" name="inst_500E6727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_holeinholein" x="192" y="477" name="inst_B417169D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkfourboulder" x="192" y="494" name="inst_F8A6F131" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fadein" x="512" y="48" name="inst_A346FB21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="496" y="160" name="inst_CDB613D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_view" x="496" y="160" name="inst_3DC3B83E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_stonecave" x="832" y="496" w="16" h="16" xo="16" yo="16" id="10018504" name="inst_82A826D2" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
