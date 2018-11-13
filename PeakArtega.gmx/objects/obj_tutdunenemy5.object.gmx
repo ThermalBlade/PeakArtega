@@ -30,15 +30,8 @@ path = path_add();
 spd = .75;
 sped = .75;
 
-if(global.enemy5 == 1)
-{
-    instance_destroy();
-}
-
-///
 mx = (((obj_one.x) div 32) * 32);
 my = (((obj_one.y + 4) div 32) * 32); 
-///
 
 timer = 0;
 agrotimer = 0;
@@ -128,9 +121,6 @@ leftwhite = spr_tutorialdunenemyleftwhite;
           <argument>
             <kind>1</kind>
             <string>depth = -y;
-var dif = choose(0.01, - 0.01, 0);
-glowSize += dif;
-glowSize = clamp(glowSize, 0.96, 1.14);
 if(gottouched == 0 &amp;&amp; lock == 0)
 {
     if(spd == .75)

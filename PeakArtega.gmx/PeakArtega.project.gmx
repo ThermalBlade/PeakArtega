@@ -479,6 +479,12 @@
     <sprite>sprites\spr_entertut</sprite>
     <sprite>sprites\spr_snowtree</sprite>
     <sprite>sprites\spr_planning</sprite>
+    <sprite>sprites\spr_csblack</sprite>
+    <sprite>sprites\spr_csred</sprite>
+    <sprite>sprites\spr_csblue</sprite>
+    <sprite>sprites\sprite333</sprite>
+    <sprite>sprites\spr_csgreen</sprite>
+    <sprite>sprites\spr_csyellow</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Backdrops">
@@ -787,8 +793,11 @@
           <object>objects\obj_p1s5beforeattack</object>
           <object>objects\obj_p1s5walktostop</object>
           <object>objects\obj_p1s5dragon</object>
+          <object>objects\obj_p1s6dragon</object>
           <object>objects\obj_p1s5fadeout</object>
           <object>objects\obj_p1s5entermonster</object>
+          <object>objects\obj_p1s6totalking</object>
+          <object>objects\obj_p1s6start</object>
         </objects>
       </objects>
       <object>objects\obj_testext</object>
@@ -1023,6 +1032,12 @@
     <object>objects\obj_shirtshoesoutline</object>
     <object>objects\obj_playevent1</object>
     <object>objects\obj_lrightslice</object>
+    <object>objects\obj_csblack</object>
+    <object>objects\obj_csred</object>
+    <object>objects\obj_csblue</object>
+    <object>objects\obj_csgreen</object>
+    <object>objects\obj_csyellow</object>
+    <object>objects\obj_holeingroundgrid</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
