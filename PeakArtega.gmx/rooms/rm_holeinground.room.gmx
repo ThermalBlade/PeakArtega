@@ -91,12 +91,12 @@
     <instance objName="obj_holeinholein" x="192" y="477" name="inst_B417169D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checkfourboulder" x="192" y="494" name="inst_F8A6F131" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fadein" x="608" y="48" name="inst_A346FB21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="576" y="624" name="inst_CDB613D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_view" x="528" y="608" name="inst_3DC3B83E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="492" y="217" name="inst_CDB613D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_view" x="497" y="163" name="inst_3DC3B83E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_csblack" x="480" y="336" name="inst_DFDC0A86" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_csred" x="304" y="320" name="inst_167C9E26" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_csblue" x="336" y="240" name="inst_F83BD08D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_p1s6dragon" x="608" y="544" name="inst_44D6AD51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1s6dragon" x="496" y="59" name="inst_44D6AD51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_csgreen" x="480" y="151" name="inst_28134E86" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_csyellow" x="656" y="304" name="inst_CC9B85BC" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_one" x="608" y="624" name="inst_7E756A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -105,6 +105,8 @@
     <instance objName="obj_four" x="736" y="384" name="inst_E0B272F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_four" x="320" y="256" name="inst_C6A457FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_holeingroundgrid" x="592" y="16" name="inst_7BDB51D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_p1s6start" x="576" y="64" name="inst_35264E67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cspink" x="288" y="206" name="inst_2ABED5C1" locked="0" code="" scaleX="7" scaleY="0.9375" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_stonecave" x="832" y="496" w="16" h="16" xo="16" yo="16" id="10018504" name="inst_82A826D2" depth="1000003" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3724,7 +3726,6 @@
     <tile bgName="bg_snowyforest" x="880" y="192" w="16" h="16" xo="0" yo="32" id="10020714" name="inst_4042B085" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="928" y="320" w="16" h="16" xo="0" yo="32" id="10020715" name="inst_22FB2F6C" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="320" y="80" w="16" h="16" xo="0" yo="32" id="10020716" name="inst_7B2DAEEB" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="352" y="112" w="16" h="16" xo="0" yo="32" id="10020717" name="inst_54A48C23" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="288" y="112" w="16" h="16" xo="0" yo="32" id="10020719" name="inst_8F339555" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="336" y="48" w="16" h="16" xo="0" yo="32" id="10020720" name="inst_3C7A6056" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="256" y="32" w="16" h="16" xo="0" yo="32" id="10020721" name="inst_CB3CE4A3" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -3802,7 +3803,6 @@
     <tile bgName="bg_snowyforest" x="272" y="32" w="16" h="16" xo="16" yo="32" id="10020802" name="inst_0720027D" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="304" y="112" w="16" h="16" xo="16" yo="32" id="10020803" name="inst_F676706B" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="336" y="80" w="16" h="16" xo="16" yo="32" id="10020804" name="inst_26725B95" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="368" y="112" w="16" h="16" xo="16" yo="32" id="10020806" name="inst_9368828F" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="352" y="48" w="16" h="16" xo="16" yo="32" id="10020807" name="inst_A7E33E55" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="672" y="176" w="16" h="16" xo="64" yo="48" id="10021014" name="inst_AC549BDE" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="704" y="128" w="16" h="16" xo="64" yo="48" id="10021015" name="inst_D0F24F82" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4213,7 +4213,6 @@
     <tile bgName="bg_snowyforest" x="96" y="96" w="16" h="16" xo="0" yo="16" id="10020851" name="inst_9C623945" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="208" y="144" w="16" h="16" xo="0" yo="16" id="10020852" name="inst_AB5C6A32" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="288" y="96" w="16" h="16" xo="0" yo="16" id="10020854" name="inst_7850783F" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="352" y="96" w="16" h="16" xo="0" yo="16" id="10020855" name="inst_1CB52077" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="192" y="48" w="16" h="16" xo="0" yo="16" id="10020856" name="inst_D0A77471" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="256" y="16" w="16" h="16" xo="0" yo="16" id="10020857" name="inst_2205D96F" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="320" y="64" w="16" h="16" xo="0" yo="16" id="10020858" name="inst_6D4719AD" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4259,7 +4258,6 @@
     <tile bgName="bg_snowyforest" x="224" y="144" w="16" h="16" xo="16" yo="16" id="10020903" name="inst_F5741D76" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="112" y="96" w="16" h="16" xo="16" yo="16" id="10020904" name="inst_AE5516BB" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="304" y="96" w="16" h="16" xo="16" yo="16" id="10020906" name="inst_9DBB5E14" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="368" y="96" w="16" h="16" xo="16" yo="16" id="10020907" name="inst_8A24CD55" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="336" y="64" w="16" h="16" xo="16" yo="16" id="10020908" name="inst_70E53F74" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="208" y="48" w="16" h="16" xo="16" yo="16" id="10020909" name="inst_9F524A98" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="272" y="16" w="16" h="16" xo="16" yo="16" id="10020910" name="inst_9D900313" depth="-1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4514,7 +4512,6 @@
     <tile bgName="bg_snowyforest" x="208" y="128" w="16" h="16" xo="0" yo="0" id="10020954" name="inst_10795D54" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="96" y="80" w="16" h="16" xo="0" yo="0" id="10020955" name="inst_D97877CC" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="288" y="80" w="16" h="16" xo="0" yo="0" id="10020956" name="inst_BDBCDD03" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="352" y="80" w="16" h="16" xo="0" yo="0" id="10020958" name="inst_6598E19F" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="320" y="48" w="16" h="16" xo="0" yo="0" id="10020959" name="inst_3B4DA5DF" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="192" y="32" w="16" h="16" xo="0" yo="0" id="10020960" name="inst_2C66B1FF" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="256" y="0" w="16" h="16" xo="0" yo="0" id="10020961" name="inst_FB77410B" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -4560,7 +4557,6 @@
     <tile bgName="bg_snowyforest" x="224" y="128" w="16" h="16" xo="16" yo="0" id="10021005" name="inst_8544F702" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="112" y="80" w="16" h="16" xo="16" yo="0" id="10021007" name="inst_863E8DF7" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="304" y="80" w="16" h="16" xo="16" yo="0" id="10021008" name="inst_157D4909" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bg_snowyforest" x="368" y="80" w="16" h="16" xo="16" yo="0" id="10021009" name="inst_E46F2F8B" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="336" y="48" w="16" h="16" xo="16" yo="0" id="10021010" name="inst_5AED1970" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="208" y="32" w="16" h="16" xo="16" yo="0" id="10021011" name="inst_A3D64768" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_snowyforest" x="272" y="0" w="16" h="16" xo="16" yo="0" id="10021012" name="inst_B2001D02" depth="-5001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

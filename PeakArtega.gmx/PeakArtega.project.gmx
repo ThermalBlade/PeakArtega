@@ -485,6 +485,7 @@
     <sprite>sprites\sprite333</sprite>
     <sprite>sprites\spr_csgreen</sprite>
     <sprite>sprites\spr_csyellow</sprite>
+    <sprite>sprites\spr_cspink</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Backdrops">
@@ -785,13 +786,14 @@
           <object>objects\obj_p1s4beforedun</object>
           <object>objects\obj_p1s4beforebeforedun</object>
           <object>objects\obj_p1s4begin</object>
-          <object>objects\obj_p1s4fadeout</object>
           <object>objects\obj_p1s42fadeout</object>
+          <object>objects\obj_p1s4fadeout</object>
           <object>objects\obj_walkingrightnightscrollcontroller</object>
         </objects>
         <objects name="Scene Five">
           <object>objects\obj_p1s5beforeattack</object>
           <object>objects\obj_p1s5walktostop</object>
+          <object>objects\obj_p1s6talking</object>
           <object>objects\obj_p1s5dragon</object>
           <object>objects\obj_p1s6dragon</object>
           <object>objects\obj_p1s5fadeout</object>
@@ -1038,6 +1040,7 @@
     <object>objects\obj_csgreen</object>
     <object>objects\obj_csyellow</object>
     <object>objects\obj_holeingroundgrid</object>
+    <object>objects\obj_cspink</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -1090,6 +1093,7 @@
       <room>rooms\rm_daystoppedwalkingright</room>
     </rooms>
     <room>rooms\rm_holeinground</room>
+    <room>rooms\rm_beforetutorial1</room>
     <room>rooms\rm_walkingrightmountain</room>
     <room>rooms\rm_1dun2</room>
     <room>rooms\rm_1dun3</room>
