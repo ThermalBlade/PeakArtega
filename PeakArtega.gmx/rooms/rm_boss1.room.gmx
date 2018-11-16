@@ -60,7 +60,7 @@
     <instance objName="obj_wall" x="352" y="32" name="inst_3DD01DB5" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="224" name="inst_1B7D817C" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="64" name="inst_E73A86A8" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_initiate1slam" x="-16" y="-16" name="inst_229924BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_initiateCombat" x="-16" y="-16" name="inst_229924BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosslava" x="32" y="0" name="inst_919087F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bosslava" x="352" y="0" name="inst_1B6305E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hitbox" x="112" y="144" name="inst_EBB9691E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

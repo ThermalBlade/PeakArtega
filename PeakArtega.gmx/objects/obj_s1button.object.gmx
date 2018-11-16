@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// Scene One
 
-room_goto(rm_1dun3);
+room_goto(rm_slamdragon);
 </string>
           </argument>
         </arguments>

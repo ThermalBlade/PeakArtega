@@ -446,15 +446,18 @@
       </sprites>
       <sprites name="CombatHUD">
         <sprite>sprites\spr_plstanima</sprite>
-        <sprite>sprites\spr_enemyhealth</sprite>
-        <sprite>sprites\spr_enemystagger</sprite>
+        <sprite>sprites\spr_enemyhealth2</sprite>
+        <sprite>sprites\spr_health</sprite>
+        <sprite>sprites\spr_playerhealth2</sprite>
+        <sprite>sprites\spr_enemystamina</sprite>
+        <sprite>sprites\spr_playerstamina</sprite>
         <sprite>sprites\spr_tim</sprite>
         <sprite>sprites\spr_playerstanima2</sprite>
         <sprite>sprites\spr_plhealth</sprite>
         <sprite>sprites\spr_playealth</sprite>
         <sprite>sprites\spr_playerhealth</sprite>
         <sprite>sprites\spr_timer</sprite>
-        <sprite>sprites\spr_playerstamina</sprite>
+        <sprite>sprites\spr_playerstamina3</sprite>
         <sprite>sprites\spr_damage</sprite>
         <sprite>sprites\spr_hitcircle</sprite>
         <sprite>sprites\spr_smallercircle</sprite>
@@ -799,6 +802,7 @@
           <object>objects\obj_p1s5fadeout</object>
           <object>objects\obj_p1s5entermonster</object>
           <object>objects\obj_p1s6totalking</object>
+          <object>objects\obj_p1s6fadeout</object>
           <object>objects\obj_p1s6start</object>
         </objects>
       </objects>
@@ -852,7 +856,7 @@
         <object>objects\obj_initiatedungeon</object>
         <object>objects\obj_exitdungeon</object>
         <object>objects\obj_initiatefollow</object>
-        <object>objects\obj_initiate1slam</object>
+        <object>objects\obj_initiateCombat</object>
         <object>objects\obj_initiate1bat</object>
         <object>objects\obj_initiateonebatoneslam</object>
         <object>objects\obj_initiate2bats</object>

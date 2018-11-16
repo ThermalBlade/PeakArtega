@@ -35,7 +35,7 @@ view_xview = 8;
 view_wview = 400;
 view_hview = 225;
 
-instance_create(0, 0, obj_noadv);
+instance_create(0, 0, obj_fadein);
 
 
 

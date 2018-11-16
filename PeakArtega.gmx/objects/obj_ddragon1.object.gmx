@@ -56,7 +56,6 @@ obj_combat.enemy1 = self;
           <argument>
             <kind>1</kind>
             <string>depth = -y;
-phy_position_x += 1;
 </string>
           </argument>
         </arguments>

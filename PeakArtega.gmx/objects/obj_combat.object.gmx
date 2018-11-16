@@ -25,12 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bounce = 0;
+            <string>instance_create(0, 0, obj_initiateCombat);
+
+bounce = 0;
 bouncer = 0;
 
-enemy1 = obj_ddragon1;
-enemy2 = 0;
-enemy3 = 0;
+initiate = 0;
 </string>
           </argument>
         </arguments>
@@ -55,7 +55,7 @@ enemy3 = 0;
             <kind>1</kind>
             <string>bouncer += pi / 40;
 bounce = sin(bouncer);
-if(bouncer == 2*pi)
+if(bouncer &gt;= 2*pi)
 {
     bouncer = 0;
 }
@@ -83,14 +83,19 @@ if(bouncer == 2*pi)
           <argument>
             <kind>1</kind>
             <string>display_set_gui_size(1920, 1080);
-draw_sprite_stretched(spr_playerhealth, 0, 1660, 820 + bounce, 288, 288);
-draw_sprite_stretched(spr_playerstamina, 0, 1660, 820 + bounce, 288, 288);
-
-if(enemy1 != 0)
+if(initiate &gt; 10)
 {
-    draw_sprite_stretched(spr_enemyhealth, 0, enemy1.x * 6, enemy1.y * 6, 192, 192);
-    draw_sprite_stretched(spr_enemystagger, 0, enemy1.x * 6, enemy1.y * 6, 192, 192);
+    draw_sprite_stretched(spr_health, 0, 1740, 900 + bounce, 192, 192);
+    draw_sprite_stretched(spr_playerstamina, 0, 1740, 900 + bounce, 192, 192);
+    
+    draw_sprite_stretched(spr_health, 0, enemy1.x * 6 - 250, enemy1.y * 6 - 500 + bounce, 192, 192);
+    draw_sprite_stretched(spr_enemystamina, 0, enemy1.x * 6 - 250, enemy1.y * 6 - 500 + bounce, 192, 192);
 }
+else 
+{
+    initiate += 1;
+}
+
 
 </string>
           </argument>
