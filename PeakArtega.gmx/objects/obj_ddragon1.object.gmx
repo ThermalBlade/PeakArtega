@@ -29,6 +29,23 @@
 image_speed = 0;
 obj_combat.enemy1 = self;
 
+stamina = 14;
+
+//
+staminaloss = 0.01;
+attack1Prob = 0.5;
+attack2Prob = 0.5;
+attack0Stamina = 2;
+attack1Stamina = 3;
+
+attackType = 2;
+
+mx = (160 div 32) * 32;
+my = (176 div 32) * 32;
+path = path_add();
+dir = 0;
+//
+
 
 
 
@@ -55,7 +72,68 @@ obj_combat.enemy1 = self;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -y;
+            <string>// Attack 0: Earthquake Slam
+// Attack 1: Headbutt
+depth = -y;
+if(obj_combat.combo == 0)
+{
+    if(attackType == 0)
+    {
+        var ran = random(1);
+        if(ran &lt;= attack1Prob)
+        {
+            attackType = 1;
+        }
+        else
+        {
+            attackType = 2;
+        }
+    }
+    else if(attackType == 1) //Slam
+    {
+        attackType = 2;
+    }
+    else if(attackType == 2) // Headbutt
+    {
+        var dx = (x div 32) * 32;
+        var dy = (y div 32) * 32;
+        if(mp_grid_path(global.grid, path, x, y, mx, my, false))
+        {
+            path_start(path, 1, path_action_stop, false);
+        }
+        if(mx == dx and my == dy) //End of current path
+        {
+            mx = (obj_combatplayer.x div 32) * 32;
+            my = (obj_combatplayer.y div 32) * 32;
+        }
+        if(direction &gt; 315 &amp;&amp; direction &lt; 360 || direction &gt;= 0 &amp;&amp; direction &lt; 45)
+        {
+            sprite_index = spr_dr1right;
+            dir = 0;
+        }
+        else if(direction &gt;= 45 &amp;&amp; direction &lt;= 135)
+        {
+            sprite_index = spr_dr1up;
+            dir = 90;
+        }
+        else if(direction &gt; 135 &amp;&amp; direction &lt; 225)
+        {
+            sprite_index = spr_dr1left;
+            dir = 180;
+        }
+        else
+        {
+            sprite_index = spr_dr1down;
+            dir = 270;
+        }
+        image_speed = 0.1;
+    }
+    stamina -= staminaloss;
+    if(stamina &lt;= 0)
+    {
+        stamina = 0;
+    }
+}
 </string>
           </argument>
         </arguments>

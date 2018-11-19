@@ -797,6 +797,7 @@
           <object>objects\obj_p1s5beforeattack</object>
           <object>objects\obj_p1s5walktostop</object>
           <object>objects\obj_p1s6talking</object>
+          <object>objects\obj_holeingroundgrid</object>
           <object>objects\obj_p1s5dragon</object>
           <object>objects\obj_p1s6dragon</object>
           <object>objects\obj_p1s5fadeout</object>
@@ -828,7 +829,6 @@
     </objects>
     <objects name="Combat">
       <objects name="Enemies">
-        <object>objects\obj_ddragon1</object>
         <object>objects\obj_bat1</object>
         <object>objects\obj_bat2</object>
         <object>objects\obj_ddragon3</object>
@@ -849,7 +849,6 @@
           <object>objects\obj_earthquakehorizhitbox</object>
         </objects>
       </objects>
-      <object>objects\obj_combat</object>
       <object>objects\obj_combatpause</object>
       <objects name="Initiate">
         <object>objects\obj_initiatefands</object>
@@ -1043,8 +1042,10 @@
     <object>objects\obj_csblue</object>
     <object>objects\obj_csgreen</object>
     <object>objects\obj_csyellow</object>
-    <object>objects\obj_holeingroundgrid</object>
     <object>objects\obj_cspink</object>
+    <object>objects\obj_d1c1grid</object>
+    <object>objects\obj_ddragon1</object>
+    <object>objects\obj_combat</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -1098,6 +1099,7 @@
     </rooms>
     <room>rooms\rm_holeinground</room>
     <room>rooms\rm_beforetutorial1</room>
+    <room>rooms\rm_slamdragon</room>
     <room>rooms\rm_walkingrightmountain</room>
     <room>rooms\rm_1dun2</room>
     <room>rooms\rm_1dun3</room>
@@ -1120,7 +1122,6 @@
     <room>rooms\rm_3dragons</room>
     <room>rooms\rm_2dragons</room>
     <room>rooms\rm_followdragon</room>
-    <room>rooms\rm_slamdragon</room>
     <room>rooms\rm_boss1</room>
     <room>rooms\rm_testslam</room>
     <room>rooms\rm_3dragonsno</room>
