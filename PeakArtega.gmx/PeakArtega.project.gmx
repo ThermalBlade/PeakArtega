@@ -122,7 +122,7 @@
             <sprite>sprites\spr_player_downsprint</sprite>
           </sprites>
           <sprites name="Dive Roll">
-            <sprite>sprites\spr_player_rolldown</sprite>
+            <sprite>sprites\spr_player_downroll</sprite>
             <sprite>sprites\spr_player_uproll</sprite>
             <sprite>sprites\spr_player_rightroll</sprite>
             <sprite>sprites\spr_player_leftroll</sprite>
@@ -323,6 +323,8 @@
       <sprite>sprites\spr_boulder</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_wwall</sprite>
+      <sprite>sprites\spr_wwwaaallll</sprite>
       <sprite>sprites\spr_holeinhole</sprite>
       <sprite>sprites\spr_boudlerinhole</sprite>
       <sprite>sprites\spr_three</sprite>
@@ -554,7 +556,6 @@
       <script>scripts\scr_getcombatinput.gml</script>
       <script>scripts\scr_movement.gml</script>
       <script>scripts\scr_movementshirtless.gml</script>
-      <script>scripts\scr_combatmovement.gml</script>
     </scripts>
     <scripts name="Weather">
       <script>scripts\scr_part_snow_int.gml</script>
@@ -579,6 +580,7 @@
       <script>scripts\scr_turn.gml</script>
       <script>scripts\scr_imageindex.gml</script>
       <script>scripts\scr_slice.gml</script>
+      <script>scripts\scr_combatmovement.gml</script>
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\scr_mainmenucheck.gml</script>
@@ -855,7 +857,6 @@
         <object>objects\obj_initiatedungeon</object>
         <object>objects\obj_exitdungeon</object>
         <object>objects\obj_initiatefollow</object>
-        <object>objects\obj_initiateCombat</object>
         <object>objects\obj_initiate1bat</object>
         <object>objects\obj_initiateonebatoneslam</object>
         <object>objects\obj_initiate2bats</object>
@@ -891,7 +892,6 @@
         <object>objects\obj_combatfadeout</object>
       </objects>
       <objects name="Player Stuff">
-        <object>objects\obj_combatplayer</object>
         <object>objects\obj_playerhitbox</object>
         <object>objects\obj_archerhitbox</object>
         <object>objects\obj_ddr1hitboxdown</object>
@@ -1046,6 +1046,11 @@
     <object>objects\obj_d1c1grid</object>
     <object>objects\obj_ddragon1</object>
     <object>objects\obj_combat</object>
+    <object>objects\obj_ddragon1follow</object>
+    <object>objects\obj_initiateCombat</object>
+    <object>objects\obj_dr1wall</object>
+    <object>objects\obj_testEnemy</object>
+    <object>objects\obj_combatplayer</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
@@ -1104,6 +1109,7 @@
     <room>rooms\rm_1dun2</room>
     <room>rooms\rm_1dun3</room>
     <room>rooms\rm_1dun4</room>
+    <room>rooms\rm_beforedun4</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_starttutorial</room>
     <room>rooms\rm_dundun</room>
@@ -1126,6 +1132,7 @@
     <room>rooms\rm_testslam</room>
     <room>rooms\rm_3dragonsno</room>
     <room>rooms\rm_testnewtextures</room>
+    <room>rooms\rm_gridtesting</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
