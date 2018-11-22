@@ -28,17 +28,22 @@
             <string>phy_fixed_rotation = true;
 image_speed = 0;
 obj_combat.enemy1 = self;
-
 stamina = 14;
 
 //
 staminaloss = 0.01;
-attack1Prob = 0.5;
-attack2Prob = 0.5;
-attack0Stamina = 2;
-attack1Stamina = 3;
+attack1Prob = 0.5; //Slam
+attack2Prob = 0.5; //Roam
+attack1Stamina = 2; //Slam
+attack2Stamina = 3; //Roam
+attack3Stamina = 1; //Headbutt
+headbuttTimerMax = 60;
+headbuttProbability = 1;
+headbuttSpeed = 1.5;
+headbuttImageSpeed = 0.15;
+instance_create(0, 0, obj_dr1hitbox);
 
-attackType = 2;
+attackType = 0;
 
 mx = x;
 my = y;
@@ -46,6 +51,7 @@ path = path_add();
 direction = 270;
 dir = direction;
 timer = 0;
+headbuttTimer = 0;
 //
 
 
@@ -79,7 +85,7 @@ timer = 0;
 depth = -y;
 if(obj_combat.combo == 0)
 {
-    if(attackType == 0)
+    if(attackType == 0) //New Attack
     {
         var ran = random(1);
         if(ran &lt;= attack1Prob)
@@ -89,14 +95,17 @@ if(obj_combat.combo == 0)
         else
         {
             attackType = 2;
+            instance_create(0, 0, obj_dr1Headbutt);
         }
     }
     else if(attackType == 1) //Slam
     {
         attackType = 2;
+        instance_create(0, 0, obj_dr1Headbutt);
     }
-    else if(attackType == 2) // Headbutt
+    else if(attackType == 2) // Roam
     {
+        var headbutt = obj_dr1Headbutt.touchingPlayer;
         if(timer == 10) //End of current path
         {
             mx = (obj_combatplayer.x div 32) * 32 + 16;
@@ -133,6 +142,52 @@ if(obj_combat.combo == 0)
             dir = 270;
         }
         image_speed = 0.1;
+        if(headbutt == 1)
+        {
+            headbuttTimer += 1;
+            if(headbuttTimer &gt;= headbuttTimerMax)
+            {
+                var headbuttRandom = random(1);
+                if(headbuttRandom &lt;= headbuttProbability)
+                {
+                    attackType = 3;
+                    with(obj_dr1Headbutt){instance_destroy();}
+                    path_end();
+                }
+                else
+                {
+                    headbuttTimer = 0;
+                }
+            }
+        }
+        else
+        {
+            headbuttTimer = 0;
+        }
+    }
+    else if(attackType == 3) //Headbutt
+    {
+        image_speed = headbuttImageSpeed;   
+        if(dir == 0)
+        {
+            sprite_index = spr_dr1rightheadbutt;
+            phy_position_x += headbuttSpeed;
+        }
+        else if(dir == 90)
+        {
+            sprite_index = spr_dr1upheadbutt;
+            phy_position_y -= headbuttSpeed;
+        }
+        else if(dir == 180)
+        {
+            sprite_index = spr_dr1leftheadbutt;
+            phy_position_x -= headbuttSpeed;
+        }
+        else
+        {
+            sprite_index = spr_dr1downheadbutt;
+            phy_position_y += headbuttSpeed;
+        }
     }
     stamina -= staminaloss;
     if(stamina &lt;= 0)
@@ -145,7 +200,7 @@ if(obj_combat.combo == 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_hitbox">
+    <event eventtype="4" ename="obj_combatplayer">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -167,6 +222,33 @@ if(obj_combat.combo == 0)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_hitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(attackType == 3)
+{
+    attackType = 0;
+}
+attackType = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
@@ -180,9 +262,9 @@ if(obj_combat.combo == 0)
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>-1</PhysicsObjectKinematic>
   <PhysicsShapePoints>
-    <point>8,12</point>
-    <point>40,12</point>
-    <point>40,44</point>
-    <point>8,44</point>
+    <point>12,16</point>
+    <point>36,16</point>
+    <point>36,40</point>
+    <point>12,40</point>
   </PhysicsShapePoints>
 </object>

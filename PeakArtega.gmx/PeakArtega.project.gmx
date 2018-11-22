@@ -380,7 +380,10 @@
             <sprite>sprites\spr_dr1down</sprite>
             <sprite>sprites\spr_dr1downheadbutt</sprite>
             <sprite>sprites\spr_dr1up</sprite>
+            <sprite>sprites\spr_dr1upheadbutt</sprite>
             <sprite>sprites\spr_dr1right</sprite>
+            <sprite>sprites\spr_dr1rightheadbutt</sprite>
+            <sprite>sprites\spr_dr1leftheadbutt</sprite>
             <sprite>sprites\spr_dr1rightstrike</sprite>
             <sprite>sprites\spr_dr1left</sprite>
             <sprite>sprites\spr_dr1jump</sprite>
@@ -491,6 +494,8 @@
     <sprite>sprites\spr_csgreen</sprite>
     <sprite>sprites\spr_csyellow</sprite>
     <sprite>sprites\spr_cspink</sprite>
+    <sprite>sprites\spr_dr1HeadbuttBox</sprite>
+    <sprite>sprites\spr_dr1hitbox</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Backdrops">
@@ -580,7 +585,6 @@
       <script>scripts\scr_turn.gml</script>
       <script>scripts\scr_imageindex.gml</script>
       <script>scripts\scr_slice.gml</script>
-      <script>scripts\scr_combatmovement.gml</script>
     </scripts>
     <scripts name="Main Menu">
       <script>scripts\scr_mainmenucheck.gml</script>
@@ -592,6 +596,8 @@
     <script>scripts\scr_print.gml</script>
     <script>scripts\scr_object.gml</script>
     <script>scripts\scr_animations.gml</script>
+    <script>scripts\scr_combatmovement.gml</script>
+    <script>scripts\scr_rollUp.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -1043,14 +1049,14 @@
     <object>objects\obj_csgreen</object>
     <object>objects\obj_csyellow</object>
     <object>objects\obj_cspink</object>
-    <object>objects\obj_d1c1grid</object>
-    <object>objects\obj_ddragon1</object>
-    <object>objects\obj_combat</object>
     <object>objects\obj_ddragon1follow</object>
+    <object>objects\obj_d1c1grid</object>
+    <object>objects\obj_combat</object>
     <object>objects\obj_initiateCombat</object>
-    <object>objects\obj_dr1wall</object>
-    <object>objects\obj_testEnemy</object>
     <object>objects\obj_combatplayer</object>
+    <object>objects\obj_ddragon1</object>
+    <object>objects\obj_dr1Headbutt</object>
+    <object>objects\obj_dr1hitbox</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
