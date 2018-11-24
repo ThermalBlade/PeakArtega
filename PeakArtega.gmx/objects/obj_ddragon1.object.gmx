@@ -41,7 +41,10 @@ headbuttTimerMax = 60;
 headbuttProbability = 1;
 headbuttSpeed = 1.5;
 headbuttImageSpeed = 0.15;
+headbuttKnockbackSpeed = 0.4;
+headbuttKnockbackAmount = 4;
 instance_create(0, 0, obj_dr1hitbox);
+headbuttObject = obj_dr1Headbutt;
 
 attackType = 0;
 
@@ -95,13 +98,15 @@ if(obj_combat.combo == 0)
         else
         {
             attackType = 2;
-            instance_create(0, 0, obj_dr1Headbutt);
+            instance_create(0, 0, headbuttObject);
+            headbuttObject.enemy = self;
         }
     }
     else if(attackType == 1) //Slam
     {
         attackType = 2;
-        instance_create(0, 0, obj_dr1Headbutt);
+        instance_create(0, 0, headbuttObject);
+        headbuttObject.enemy = self;
     }
     else if(attackType == 2) // Roam
     {
@@ -151,7 +156,7 @@ if(obj_combat.combo == 0)
                 if(headbuttRandom &lt;= headbuttProbability)
                 {
                     attackType = 3;
-                    with(obj_dr1Headbutt){instance_destroy();}
+                    with(headbuttObject){instance_destroy();}
                     path_end();
                 }
                 else

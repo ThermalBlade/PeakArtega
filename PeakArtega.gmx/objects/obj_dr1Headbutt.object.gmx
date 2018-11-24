@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>touchingPlayer = 0;
+enemy = 0;
 </string>
           </argument>
         </arguments>
@@ -48,9 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>phy_position_x = obj_ddragon1.phy_position_x;
-phy_position_y = obj_ddragon1.phy_position_y;
-var d = obj_ddragon1.dir;
+            <string>phy_position_x = enemy.phy_position_x;
+phy_position_y = enemy.phy_position_y;
+var d = enemy.dir;
 if(d &gt; 315 &amp;&amp; d &lt; 360 || d &gt;= 0 &amp;&amp; d &lt; 45)
 {
     phy_rotation = 90;

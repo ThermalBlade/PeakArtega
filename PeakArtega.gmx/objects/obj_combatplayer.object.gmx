@@ -41,6 +41,13 @@ rollDown = false;
 rollLeft = false;
 rollRight = false;
 
+knockback = false;
+knockUp = false;
+knockDown = false;
+knockLeft = false;
+knockRight = false;
+knockbackSpeed = 0;
+
 //
 rollSpeed = 2;
 rollImageSpeed = 0.15;

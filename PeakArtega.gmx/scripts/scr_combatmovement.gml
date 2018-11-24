@@ -76,7 +76,7 @@ if(canMove == true) //Running
         image_index = 0;
     }
 }
-if(rolling == true) //Rolling
+else if(rolling == true) //Rolling
 {
     phy_position_x += hspd * rollSpeed;
     phy_position_y += vspd * rollSpeed;
@@ -132,5 +132,43 @@ if(rolling == true) //Rolling
             canMove = true;
             rollLeft = false;
         }
+    }
+}
+if(knockback > 0) //Knocked Back
+{
+    canMove = false;
+    rolling = false;
+    image_speed = 0;
+    if(knockUp == true)
+    {
+        sprite_index = spr_player_downsprint;
+        phy_position_y -= knockback;
+        knockback -= knockbackSpeed;
+    }
+    else if(knockDown == true)
+    {
+        sprite_index = spr_player_upsprint;
+        phy_position_y += knockback;
+        knockback -= knockbackSpeed;
+    }
+    else if(knockRight == true)
+    {
+        sprite_index = spr_player_leftsprint;
+        phy_position_x += knockback;
+        knockback -= knockbackSpeed;
+    }
+    else if(knockLeft == true)
+    {
+        sprite_index = spr_player_rightsprint;
+        phy_position_x -= knockback;
+        knockback -= knockbackSpeed;
+    }
+    if(knockback <= 0)
+    {
+        canMove = true;
+        knockUp = false;
+        knockDown = false;
+        knockRight = false;
+        knockLeft = false;
     }
 }
