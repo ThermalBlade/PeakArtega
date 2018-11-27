@@ -612,6 +612,9 @@
     <font>fonts\fnt_combatbig</font>
   </fonts>
   <objects name="objects">
+    <objects name="Music">
+      <object>objects\obj_playevent1</object>
+    </objects>
     <objects name="Misc">
       <object>objects\obj_controllerDisconnected</object>
       <object>objects\obj_controllerConnected</object>
@@ -767,6 +770,13 @@
           <object>objects\obj_p1s1letsgo</object>
           <object>objects\obj_p1s1fadeout</object>
           <object>objects\obj_p1s1shirtfadeout</object>
+          <object>objects\obj_corbsdroppedsword</object>
+          <object>objects\obj_corboutline</object>
+          <object>objects\obj_corboutline2</object>
+          <object>objects\obj_shirtshoesoutline</object>
+          <object>objects\obj_p1s1turncorb</object>
+          <object>objects\obj_a1s1goback</object>
+          <object>objects\obj_movementtut</object>
         </objects>
         <objects name="Scene Two">
           <object>objects\obj_p1s2beforewalking</object>
@@ -815,25 +825,30 @@
           <object>objects\obj_p1s6start</object>
         </objects>
       </objects>
-      <object>objects\obj_testext</object>
-      <object>objects\obj_cs1demotext</object>
-      <object>objects\obj_CS1text</object>
-      <object>objects\obj_nogametocontinue</object>
-      <object>objects\obj_usearrowkeys</object>
-      <object>objects\obj_useparry</object>
-      <object>objects\obj_tutgokillthing</object>
-      <object>objects\obj_tuttrytoparry</object>
-      <object>objects\obj_tuttryadv</object>
-      <object>objects\obj_timerandslice</object>
-      <object>objects\obj_gravelstanimastab</object>
-      <object>objects\obj_rolling</object>
-      <object>objects\obj_aimandwalkaway</object>
-      <object>objects\obj_killit</object>
-      <object>objects\obj_tutcirclemeans</object>
-      <object>objects\obj_mainmenu</object>
-      <object>objects\obj_titlemenu</object>
-      <object>objects\obj_startnewgame</object>
-      <object>objects\starttesttimeline</object>
+      <objects name="Misc">
+        <object>objects\obj_ex</object>
+        <object>objects\obj_que</object>
+        <object>objects\obj_animations</object>
+        <object>objects\obj_titlemenu</object>
+        <object>objects\obj_CS1text</object>
+        <object>objects\obj_cs1demotext</object>
+        <object>objects\obj_useparry</object>
+        <object>objects\obj_nogametocontinue</object>
+        <object>objects\obj_usearrowkeys</object>
+        <object>objects\obj_testext</object>
+        <object>objects\obj_timerandslice</object>
+        <object>objects\obj_tutgokillthing</object>
+        <object>objects\obj_tuttrytoparry</object>
+        <object>objects\obj_tuttryadv</object>
+        <object>objects\obj_rolling</object>
+        <object>objects\obj_aimandwalkaway</object>
+        <object>objects\obj_gravelstanimastab</object>
+        <object>objects\obj_tutcirclemeans</object>
+        <object>objects\obj_killit</object>
+        <object>objects\obj_mainmenu</object>
+        <object>objects\obj_startnewgame</object>
+        <object>objects\starttesttimeline</object>
+      </objects>
     </objects>
     <objects name="Combat">
       <objects name="Enemies">
@@ -898,7 +913,6 @@
         <object>objects\obj_combatfadeout</object>
       </objects>
       <objects name="Player Stuff">
-        <object>objects\obj_playerhitbox</object>
         <object>objects\obj_archerhitbox</object>
         <object>objects\obj_ddr1hitboxdown</object>
         <object>objects\obj_bat1hitbox</object>
@@ -1029,30 +1043,21 @@
       <object>objects\obj_vincline</object>
       <object>objects\obj_hincline</object>
     </objects>
+    <objects name="CS Squares">
+      <object>objects\obj_csgreen</object>
+      <object>objects\obj_csblack</object>
+      <object>objects\obj_csred</object>
+      <object>objects\obj_csblue</object>
+      <object>objects\obj_csyellow</object>
+      <object>objects\obj_cspink</object>
+    </objects>
     <object>objects\obj_print</object>
-    <object>objects\obj_animations</object>
-    <object>objects\obj_gotoplace</object>
-    <object>objects\obj_ex</object>
-    <object>objects\obj_que</object>
-    <object>objects\obj_corbsdroppedsword</object>
-    <object>objects\obj_movementtut</object>
-    <object>objects\obj_a1s1goback</object>
-    <object>objects\obj_p1s1turncorb</object>
-    <object>objects\obj_corboutline</object>
-    <object>objects\obj_corboutline2</object>
-    <object>objects\obj_shirtshoesoutline</object>
-    <object>objects\obj_playevent1</object>
     <object>objects\obj_lrightslice</object>
-    <object>objects\obj_csblack</object>
-    <object>objects\obj_csred</object>
-    <object>objects\obj_csblue</object>
-    <object>objects\obj_csgreen</object>
-    <object>objects\obj_csyellow</object>
-    <object>objects\obj_cspink</object>
     <object>objects\obj_ddragon1follow</object>
     <object>objects\obj_d1c1grid</object>
     <object>objects\obj_combat</object>
     <object>objects\obj_initiateCombat</object>
+    <object>objects\obj_playerhitbox</object>
     <object>objects\obj_combatplayer</object>
     <object>objects\obj_ddragon1</object>
     <object>objects\obj_dr1Headbutt</object>

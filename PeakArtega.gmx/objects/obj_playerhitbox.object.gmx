@@ -70,7 +70,7 @@ else if(obj_combatplayer.sprite_index == spr_player_uproll)
 {
     sprite_index = spr_player_uprollhitbox;
 }
-else if(obj_combatplayer.sprite_index == spr_player_rolldown)
+else if(obj_combatplayer.sprite_index == spr_player_downroll)
 {
     sprite_index = spr_player_rolldownhitbox;
 }

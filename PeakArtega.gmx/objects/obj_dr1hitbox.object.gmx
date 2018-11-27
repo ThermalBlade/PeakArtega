@@ -71,7 +71,7 @@ else
 
 if(obj_ddragon1.attackType == 3)
 {
-    if(place_meeting(x, y, obj_combatplayer))
+    if(place_meeting(x, y, obj_playerhitbox))
     {
         enemy.attackType = 0;
         if(dir == 0)
