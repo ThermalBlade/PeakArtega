@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>touchingplayer = 0;
-image_alpha = 0;
-yo = 0;
 
 </string>
           </argument>
@@ -51,7 +49,7 @@ yo = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x, y, obj_playercheck) &amp;&amp; yo == 0)
+            <string>if(place_meeting(x, y, obj_playerhitbox))
 {
     touchingplayer = 1;
 }
@@ -59,29 +57,8 @@ else
 {
     touchingplayer = 0;
 }
-phy_position_x = obj_combat.enemy1.x;
-phy_position_y = obj_combat.enemy1.y + 7 + yo;
-
-if(image_alpha &gt; 0 &amp;&amp; image_alpha &lt; .4 &amp;&amp; yo == 0)
-{
-    image_alpha += .02;
-}
-
-if(instance_exists(obj_combatpause))
-{
-    if(image_alpha &gt;= 0)
-    {
-        image_alpha -= .05;
-    }
-}
-
-if(yo &gt; 0)
-{
-    image_alpha = 0;
-}
-
-
-
+phy_position_x = enemy.x;
+phy_position_y = enemy.y + 7;
 
 
 </string>

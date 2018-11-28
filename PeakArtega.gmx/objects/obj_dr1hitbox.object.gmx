@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>enemy = obj_ddragon1;
+pause = 0;
+pauseTimerSet = enemy.headbuttWait;
+pauseTimer = pauseTimerSet;
 </string>
           </argument>
         </arguments>
@@ -73,7 +76,8 @@ if(obj_ddragon1.attackType == 3)
 {
     if(place_meeting(x, y, obj_playerhitbox))
     {
-        enemy.attackType = 0;
+        pause = 1;
+        enemy.attackType = 4;
         if(dir == 0)
         {
             obj_combatplayer.knockRight = true;
@@ -96,7 +100,19 @@ if(obj_ddragon1.attackType == 3)
     }
     else if(place_meeting(x, y, obj_hitbox))
     {
-        enemy.attackType = 0;
+        pause = 1;
+        enemy.attackType = 4;
+    }
+}
+
+if(pause == 1)
+{
+    pauseTimer -= 1;
+    if(pauseTimer == 0)
+    {
+        enemy.attackType = 4;
+        pauseTimer = pauseTimerSet;
+        pause = 0;
     }
 }
 </string>

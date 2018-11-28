@@ -891,7 +891,6 @@
         <object>objects\obj_playerdied</object>
       </objects>
       <objects name="Circles">
-        <object>objects\obj_closemeleecirc1</object>
         <object>objects\obj_ranged1</object>
         <object>objects\obj_ranged2</object>
         <object>objects\obj_ranged3</object>
@@ -1062,6 +1061,7 @@
     <object>objects\obj_ddragon1</object>
     <object>objects\obj_dr1Headbutt</object>
     <object>objects\obj_dr1hitbox</object>
+    <object>objects\obj_tooClose1</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">

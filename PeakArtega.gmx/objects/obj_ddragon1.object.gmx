@@ -39,12 +39,17 @@ attack2Stamina = 3; //Roam
 attack3Stamina = 1; //Headbutt
 headbuttTimerMax = 60;
 headbuttProbability = 1;
-headbuttSpeed = 1.5;
-headbuttImageSpeed = 0.15;
-headbuttKnockbackSpeed = 0.4;
+headbuttSpeed = 1.8;
+headbuttImageSpeed = 0.18;
+headbuttKnockbackSpeed = 0.3;
 headbuttKnockbackAmount = 4;
+headbuttWait = 30;
+headbuttWaitTime = headbuttWait;
 instance_create(0, 0, obj_dr1hitbox);
 headbuttObject = obj_dr1Headbutt;
+instance_create(0, 0, obj_tooClose1);
+tooCloseObject = obj_tooClose1;
+tooCloseObject.enemy = self;
 
 attackType = 0;
 
@@ -86,9 +91,20 @@ headbuttTimer = 0;
             <string>// Attack 0: Earthquake Slam
 // Attack 1: Headbutt
 depth = -y;
-if(obj_combat.combo == 0)
+if(obj_combat.combo == 0) //Move Freely
 {
-    if(attackType == 0) //New Attack
+    if(tooCloseObject.touchingplayer == 1 and attackType != 3 and attackType != 4) //Too Close
+    {
+        attackType = -1;
+        path_end();
+        image_speed = 0;
+    }
+    
+    if(attackType == -1)
+    {
+        
+    }
+    else if(attackType == 0) //New Attack
     {
         var ran = random(1);
         if(ran &lt;= attack1Prob)
@@ -192,6 +208,17 @@ if(obj_combat.combo == 0)
         {
             sprite_index = spr_dr1downheadbutt;
             phy_position_y += headbuttSpeed;
+        }
+    }
+    else if(attackType == 4) //Wait
+    {
+        image_speed = 0;
+        image_index = 0;
+        headbuttWaitTime -= 1;
+        if(headbuttWaitTime == 0)
+        {
+            headbuttWaitTime = headbuttWait;
+            attackType = 0;
         }
     }
     stamina -= staminaloss;
