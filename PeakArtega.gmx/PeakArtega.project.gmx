@@ -356,7 +356,7 @@
           <sprite>sprites\spr_rrightslice</sprite>
           <sprite>sprites\spr_ldownslice</sprite>
           <sprite>sprites\spr_rdownslice</sprite>
-          <sprite>sprites\spr_lleftslice</sprite>
+          <sprite>sprites\spr_leftupdownslice</sprite>
           <sprite>sprites\spr_lrightslice</sprite>
           <sprite>sprites\spr_rleftslice</sprite>
           <sprite>sprites\spr_rightslice</sprite>
@@ -378,13 +378,16 @@
         <sprites name="Ddragon1">
           <sprites name="Walking">
             <sprite>sprites\spr_dr1down</sprite>
+            <sprite>sprites\spr_dr1downstrike</sprite>
             <sprite>sprites\spr_dr1downheadbutt</sprite>
             <sprite>sprites\spr_dr1up</sprite>
+            <sprite>sprites\spr_dr1upstrike</sprite>
             <sprite>sprites\spr_dr1upheadbutt</sprite>
             <sprite>sprites\spr_dr1right</sprite>
             <sprite>sprites\spr_dr1rightheadbutt</sprite>
             <sprite>sprites\spr_dr1leftheadbutt</sprite>
             <sprite>sprites\spr_dr1rightstrike</sprite>
+            <sprite>sprites\spr_dr1leftstrike</sprite>
             <sprite>sprites\spr_dr1left</sprite>
             <sprite>sprites\spr_dr1jump</sprite>
             <sprite>sprites\spr_dr1slide</sprite>
@@ -1062,6 +1065,7 @@
     <object>objects\obj_dr1Headbutt</object>
     <object>objects\obj_dr1hitbox</object>
     <object>objects\obj_tooClose1</object>
+    <object>objects\obj_leftupdownslice</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">

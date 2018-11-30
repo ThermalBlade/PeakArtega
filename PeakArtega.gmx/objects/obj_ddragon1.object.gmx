@@ -93,16 +93,58 @@ headbuttTimer = 0;
 depth = -y;
 if(obj_combat.combo == 0) //Move Freely
 {
-    if(tooCloseObject.touchingplayer == 1 and attackType != 3 and attackType != 4) //Too Close
+    if(tooCloseObject.touchingplayer == 1 and attackType != 3) //Too Close
     {
         attackType = -1;
         path_end();
         image_speed = 0;
+        image_index = 0;
+        tcSwitch = 0;
     }
-    
-    if(attackType == -1)
+    if(attackType == -1) //Too Close Attack
     {
-        
+        if(image_index &lt;= 3)
+        {
+            image_speed = 0.1;
+        }
+        else
+        {
+            image_speed = 0.2;
+        }
+        var xdist = abs(obj_combatplayer.phy_position_x - phy_position_x);
+        var xd = obj_combatplayer.phy_position_x - phy_position_x;
+        var ydist = abs(obj_combatplayer.phy_position_y - phy_position_y);
+        var yd = obj_combatplayer.phy_position_y - phy_position_y;
+        if(xdist &gt;= ydist &amp;&amp; xd &gt;= 0) //Right
+        {
+            sprite_index = spr_dr1rightstrike;
+            direction = 0;
+        }
+        else if(ydist &gt; xdist &amp;&amp; yd &gt;= 0) //Down
+        {
+            sprite_index = spr_dr1downstrike;
+            direction = 270;
+        }
+        else if(xdist &gt;= ydist &amp;&amp; xd &lt;= 0) //Left
+        {
+            sprite_index = spr_dr1leftstrike;
+            direction = 180;
+            if(image_index &gt;= 3 and tcSwitch == 0)
+            {
+                instance_create(x - 30, y, obj_leftupdownslice)
+                tcSwitch = 1;
+            }
+            else if(image_index &gt;= 4 and tcSwitch == 1)
+            {
+                attackType = 0;
+                image_index = 0;
+            }
+        }
+        else
+        {
+            sprite_index = spr_dr1upstrike;
+            direction = 90;
+        }
     }
     else if(attackType == 0) //New Attack
     {
@@ -214,6 +256,12 @@ if(obj_combat.combo == 0) //Move Freely
     {
         image_speed = 0;
         image_index = 0;
+        
+        if(dir == 0){sprite_index = spr_dr1rightheadbutt;}
+        else if(dir == 90){sprite_index = spr_dr1upheadbutt;}
+        else if(dir == 180){sprite_index = spr_dr1leftheadbutt;}
+        else{sprite_index = spr_dr1downheadbutt;}
+        
         headbuttWaitTime -= 1;
         if(headbuttWaitTime == 0)
         {
