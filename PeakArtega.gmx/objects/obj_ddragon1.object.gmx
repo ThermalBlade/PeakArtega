@@ -45,10 +45,24 @@ headbuttKnockbackSpeed = 0.3;
 headbuttKnockbackAmount = 4;
 headbuttWait = 30;
 headbuttWaitTime = headbuttWait;
+
+tcAttackProbability = 1;
+tcAttackImageSpeed = 0.18;
+tcAttackKnockbackSpeed = 0.3;
+tcAttackKnockbackAmount = 4;
+tcAttackWait = 30;
+tcAttackWaitTime = tcAttackWait;
+tcSlice = obj_ddragontcSlice;
+tcSliceImageSpeed = 0.8;
+tcCircle = obj_smallCircle1;
+tcStartingHit = 3;
+tcEndingHit = 9;
+tcXOffset = 26;
+
 instance_create(0, 0, obj_dr1hitbox);
-headbuttObject = obj_dr1Headbutt;
-instance_create(0, 0, obj_tooClose1);
-tooCloseObject = obj_tooClose1;
+headbuttObject = obj_ddragonHeadbutt;
+tooCloseObject = obj_ddragonTooClose1;
+instance_create(0, 0, tooCloseObject);
 tooCloseObject.enemy = self;
 
 attackType = 0;
@@ -93,7 +107,7 @@ headbuttTimer = 0;
 depth = -y;
 if(obj_combat.combo == 0) //Move Freely
 {
-    if(tooCloseObject.touchingplayer == 1 and attackType != 3) //Too Close
+    if(tooCloseObject.touchingplayer == 1 and attackType == 2) //Too Close
     {
         attackType = -1;
         path_end();
@@ -103,14 +117,7 @@ if(obj_combat.combo == 0) //Move Freely
     }
     if(attackType == -1) //Too Close Attack
     {
-        if(image_index &lt;= 3)
-        {
-            image_speed = 0.1;
-        }
-        else
-        {
-            image_speed = 0.2;
-        }
+        image_speed = tcAttackImageSpeed;
         var xdist = abs(obj_combatplayer.phy_position_x - phy_position_x);
         var xd = obj_combatplayer.phy_position_x - phy_position_x;
         var ydist = abs(obj_combatplayer.phy_position_y - phy_position_y);
@@ -129,14 +136,18 @@ if(obj_combat.combo == 0) //Move Freely
         {
             sprite_index = spr_dr1leftstrike;
             direction = 180;
-            if(image_index &gt;= 3 and tcSwitch == 0)
+            if(image_index &gt;= 2 and tcSwitch == 0)
             {
-                instance_create(x - 30, y, obj_leftupdownslice)
+                instance_create(x - tcXOffset, y, tcSlice);
+                tcSlice.circle = tcCircle; 
+                tcSlice.enemy = self;
+                tcSlice.startingHit = tcStartingHit;
+                tcSlice.endingHit = tcEndingHit;
                 tcSwitch = 1;
             }
-            else if(image_index &gt;= 4 and tcSwitch == 1)
+            else if(image_index &gt;= 3 and tcSwitch == 1)
             {
-                attackType = 0;
+                attackType = 5;
                 image_index = 0;
             }
         }
@@ -168,7 +179,7 @@ if(obj_combat.combo == 0) //Move Freely
     }
     else if(attackType == 2) // Roam
     {
-        var headbutt = obj_dr1Headbutt.touchingPlayer;
+        var headbutt = headbuttObject.touchingPlayer;
         if(timer == 10) //End of current path
         {
             mx = (obj_combatplayer.x div 32) * 32 + 16;
@@ -252,7 +263,7 @@ if(obj_combat.combo == 0) //Move Freely
             phy_position_y += headbuttSpeed;
         }
     }
-    else if(attackType == 4) //Wait
+    else if(attackType == 4) //Headbutt Wait
     {
         image_speed = 0;
         image_index = 0;
@@ -266,6 +277,23 @@ if(obj_combat.combo == 0) //Move Freely
         if(headbuttWaitTime == 0)
         {
             headbuttWaitTime = headbuttWait;
+            attackType = 0;
+        }
+    }
+    else if(attackType == 5) //Too Close Strike Wait
+    {
+        image_speed = 0;
+        image_index = 0;
+        
+        if(dir == 0){sprite_index = spr_dr1right;}
+        else if(dir == 90){sprite_index = spr_dr1up;}
+        else if(dir == 180){sprite_index = spr_dr1left;}
+        else{sprite_index = spr_dr1down;}
+        
+        tcAttackWaitTime -= 1;
+        if(tcAttackWaitTime == 0)
+        {
+            tcAttackWaitTime = tcAttackWait;
             attackType = 0;
         }
     }

@@ -74,6 +74,7 @@
           <sprite>sprites\spr_reflection</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\spr_snowtree</sprite>
     </sprites>
     <sprites name="Characters">
       <sprites name="Corb">
@@ -242,6 +243,12 @@
       <sprite>sprites\Blue</sprite>
       <sprite>sprites\Yellow</sprite>
       <sprite>sprites\Red</sprite>
+      <sprite>sprites\spr_csblack</sprite>
+      <sprite>sprites\spr_csred</sprite>
+      <sprite>sprites\spr_csblue</sprite>
+      <sprite>sprites\spr_csgreen</sprite>
+      <sprite>sprites\spr_csyellow</sprite>
+      <sprite>sprites\spr_cspink</sprite>
       <sprite>sprites\Red1</sprite>
       <sprite>sprites\Invisible</sprite>
     </sprites>
@@ -266,26 +273,35 @@
       <sprite>sprites\spr_player_downsprinthitbox</sprite>
       <sprite>sprites\spr_player_rightsprinthitbox</sprite>
     </sprites>
-    <sprites name="Tutorial Shit">
-      <sprite>sprites\spr_tutboulder</sprite>
-      <sprite>sprites\spr_tutorialdunenemydown</sprite>
-      <sprite>sprites\spr_tutinviswall1</sprite>
-      <sprite>sprites\spr_tutorialdunenemyupattack</sprite>
-      <sprite>sprites\spr_tutorialdunenemyrightwhite</sprite>
-      <sprite>sprites\spr_stuff</sprite>
-      <sprite>sprites\spr_tutgrey</sprite>
-      <sprite>sprites\spr_tutorialdunenemyupwhite</sprite>
-      <sprite>sprites\spr_tutorialdunenemyright</sprite>
-      <sprite>sprites\spr_tutorialdunenemyrightattack</sprite>
-      <sprite>sprites\spr_tutorialdunenemyup</sprite>
-      <sprite>sprites\spr_tutorialdunenemyleftattack</sprite>
-      <sprite>sprites\spr_tutorialenemydowndead</sprite>
-      <sprite>sprites\spr_tutorialdunenemyleft</sprite>
-      <sprite>sprites\spr_tutorialdunenemydownattack</sprite>
-      <sprite>sprites\spr_tutorialdunenemydownwhite</sprite>
-      <sprite>sprites\spr_tutorialdunenemyleftwhite</sprite>
-      <sprite>sprites\spr_inviswall2</sprite>
-      <sprite>sprites\sprite227</sprite>
+    <sprites name="Tutorials">
+      <sprites name="Tutorial Shit Old">
+        <sprite>sprites\spr_tutboulder</sprite>
+        <sprite>sprites\spr_tutorialdunenemydown</sprite>
+        <sprite>sprites\spr_tutinviswall1</sprite>
+        <sprite>sprites\spr_tutorialdunenemyupattack</sprite>
+        <sprite>sprites\spr_tutorialdunenemyrightwhite</sprite>
+        <sprite>sprites\spr_stuff</sprite>
+        <sprite>sprites\spr_tutgrey</sprite>
+        <sprite>sprites\spr_tutorialdunenemyupwhite</sprite>
+        <sprite>sprites\spr_tutorialdunenemyright</sprite>
+        <sprite>sprites\spr_tutorialdunenemyrightattack</sprite>
+        <sprite>sprites\spr_tutorialdunenemyup</sprite>
+        <sprite>sprites\spr_tutorialdunenemyleftattack</sprite>
+        <sprite>sprites\spr_tutorialenemydowndead</sprite>
+        <sprite>sprites\spr_tutorialdunenemyleft</sprite>
+        <sprite>sprites\spr_tutorialdunenemydownattack</sprite>
+        <sprite>sprites\spr_tutorialdunenemydownwhite</sprite>
+        <sprite>sprites\spr_tutorialdunenemyleftwhite</sprite>
+        <sprite>sprites\spr_inviswall2</sprite>
+        <sprite>sprites\sprite227</sprite>
+      </sprites>
+      <sprite>sprites\spr_interacttut</sprite>
+      <sprite>sprites\spr_movementtut</sprite>
+      <sprite>sprites\spr_keymovementtut</sprite>
+      <sprite>sprites\spr_naming</sprite>
+      <sprite>sprites\spr_backdone</sprite>
+      <sprite>sprites\spr_entertut</sprite>
+      <sprite>sprites\spr_planning</sprite>
     </sprites>
     <sprites name="Visuals">
       <sprites name="Cutscenes">
@@ -349,25 +365,6 @@
       <sprite>sprites\spr_six</sprite>
     </sprites>
     <sprites name="Combat">
-      <sprites name="Strikes">
-        <sprites name="Slices">
-          <sprite>sprites\spr_strike</sprite>
-          <sprite>sprites\spr_leftslice</sprite>
-          <sprite>sprites\spr_rrightslice</sprite>
-          <sprite>sprites\spr_ldownslice</sprite>
-          <sprite>sprites\spr_rdownslice</sprite>
-          <sprite>sprites\spr_leftupdownslice</sprite>
-          <sprite>sprites\spr_lrightslice</sprite>
-          <sprite>sprites\spr_rleftslice</sprite>
-          <sprite>sprites\spr_rightslice</sprite>
-        </sprites>
-        <sprites name="Stabs">
-          <sprite>sprites\spr_upstab</sprite>
-          <sprite>sprites\spr_downstab</sprite>
-          <sprite>sprites\spr_rightstab</sprite>
-          <sprite>sprites\spr_leftstab</sprite>
-        </sprites>
-      </sprites>
       <sprites name="Attacks">
         <sprite>sprites\spr_earthquake</sprite>
         <sprite>sprites\spr_earthquakehitbox</sprite>
@@ -375,32 +372,6 @@
         <sprite>sprites\spr_horzearthquake</sprite>
       </sprites>
       <sprites name="Enemies">
-        <sprites name="Ddragon1">
-          <sprites name="Walking">
-            <sprite>sprites\spr_dr1down</sprite>
-            <sprite>sprites\spr_dr1downstrike</sprite>
-            <sprite>sprites\spr_dr1downheadbutt</sprite>
-            <sprite>sprites\spr_dr1up</sprite>
-            <sprite>sprites\spr_dr1upstrike</sprite>
-            <sprite>sprites\spr_dr1upheadbutt</sprite>
-            <sprite>sprites\spr_dr1right</sprite>
-            <sprite>sprites\spr_dr1rightheadbutt</sprite>
-            <sprite>sprites\spr_dr1leftheadbutt</sprite>
-            <sprite>sprites\spr_dr1rightstrike</sprite>
-            <sprite>sprites\spr_dr1leftstrike</sprite>
-            <sprite>sprites\spr_dr1left</sprite>
-            <sprite>sprites\spr_dr1jump</sprite>
-            <sprite>sprites\spr_dr1slide</sprite>
-            <sprite>sprites\spr_dr1dying</sprite>
-            <sprite>sprites\spr_dr1downwhite</sprite>
-          </sprites>
-          <sprites name="Attacks">
-            <sprite>sprites\spr_dr1earthquake</sprite>
-            <sprite>sprites\spr_dr1hitboxdown</sprite>
-            <sprite>sprites\spr_dr1hitboxright</sprite>
-            <sprite>sprites\spr_dr1tired</sprite>
-          </sprites>
-        </sprites>
         <sprites name="Ddragonf1">
           <sprite>sprites\spr_dr1fup</sprite>
           <sprite>sprites\spr_drfstrikeup</sprite>
@@ -455,10 +426,7 @@
       <sprites name="CombatHUD">
         <sprite>sprites\spr_plstanima</sprite>
         <sprite>sprites\spr_enemyhealth2</sprite>
-        <sprite>sprites\spr_health</sprite>
         <sprite>sprites\spr_playerhealth2</sprite>
-        <sprite>sprites\spr_enemystamina</sprite>
-        <sprite>sprites\spr_playerstamina</sprite>
         <sprite>sprites\spr_tim</sprite>
         <sprite>sprites\spr_playerstanima2</sprite>
         <sprite>sprites\spr_plhealth</sprite>
@@ -467,11 +435,8 @@
         <sprite>sprites\spr_timer</sprite>
         <sprite>sprites\spr_playerstamina3</sprite>
         <sprite>sprites\spr_damage</sprite>
-        <sprite>sprites\spr_hitcircle</sprite>
-        <sprite>sprites\spr_smallercircle</sprite>
         <sprite>sprites\spr_smallersmallercircle</sprite>
         <sprite>sprites\spr_slightlylargercircle</sprite>
-        <sprite>sprites\spr_closecombatcircle</sprite>
         <sprite>sprites\spr_combatback</sprite>
       </sprites>
       <sprite>sprites\spr_boss1walking</sprite>
@@ -482,23 +447,60 @@
       <sprite>sprites\spr_boss1rslam</sprite>
       <sprite>sprites\spr_boss1rswipe</sprite>
     </sprites>
-    <sprite>sprites\spr_movementtut</sprite>
-    <sprite>sprites\spr_interacttut</sprite>
-    <sprite>sprites\spr_keymovementtut</sprite>
-    <sprite>sprites\spr_naming</sprite>
-    <sprite>sprites\spr_backdone</sprite>
-    <sprite>sprites\spr_entertut</sprite>
-    <sprite>sprites\spr_snowtree</sprite>
-    <sprite>sprites\spr_planning</sprite>
-    <sprite>sprites\spr_csblack</sprite>
-    <sprite>sprites\spr_csred</sprite>
-    <sprite>sprites\spr_csblue</sprite>
-    <sprite>sprites\sprite333</sprite>
-    <sprite>sprites\spr_csgreen</sprite>
-    <sprite>sprites\spr_csyellow</sprite>
-    <sprite>sprites\spr_cspink</sprite>
+    <sprites name="Ddragon1">
+      <sprites name="Walking">
+        <sprite>sprites\spr_dr1down</sprite>
+        <sprite>sprites\spr_dr1downstrike</sprite>
+        <sprite>sprites\spr_dr1downheadbutt</sprite>
+        <sprite>sprites\spr_dr1up</sprite>
+        <sprite>sprites\spr_dr1upstrike</sprite>
+        <sprite>sprites\spr_dr1upheadbutt</sprite>
+        <sprite>sprites\spr_dr1right</sprite>
+        <sprite>sprites\spr_dr1rightheadbutt</sprite>
+        <sprite>sprites\spr_dr1leftheadbutt</sprite>
+        <sprite>sprites\spr_dr1rightstrike</sprite>
+        <sprite>sprites\spr_dr1leftstrike</sprite>
+        <sprite>sprites\spr_dr1left</sprite>
+        <sprite>sprites\spr_dr1jump</sprite>
+        <sprite>sprites\spr_dr1slide</sprite>
+        <sprite>sprites\spr_dr1dying</sprite>
+        <sprite>sprites\spr_dr1downwhite</sprite>
+      </sprites>
+      <sprites name="Attacks">
+        <sprite>sprites\spr_dr1earthquake</sprite>
+        <sprite>sprites\spr_dr1hitboxdown</sprite>
+        <sprite>sprites\spr_dr1hitboxright</sprite>
+        <sprite>sprites\spr_dr1tired</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Strikes">
+      <sprites name="Slices">
+        <sprite>sprites\spr_strike</sprite>
+        <sprite>sprites\spr_leftslice</sprite>
+        <sprite>sprites\spr_rrightslice</sprite>
+        <sprite>sprites\spr_ldownslice</sprite>
+        <sprite>sprites\spr_rdownslice</sprite>
+        <sprite>sprites\spr_rleftslice</sprite>
+      </sprites>
+      <sprites name="Stabs">
+        <sprite>sprites\spr_upstab</sprite>
+        <sprite>sprites\spr_downstab</sprite>
+        <sprite>sprites\spr_rightstab</sprite>
+        <sprite>sprites\spr_leftstab</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\spr_dr1HeadbuttBox</sprite>
+    <sprite>sprites\spr_health</sprite>
+    <sprite>sprites\spr_playerstamina</sprite>
+    <sprite>sprites\spr_hitcircle</sprite>
+    <sprite>sprites\spr_smallercircle</sprite>
+    <sprite>sprites\spr_enemystamina</sprite>
+    <sprite>sprites\spr_closecombatcircle</sprite>
     <sprite>sprites\spr_dr1hitbox</sprite>
+    <sprite>sprites\spr_smallCircle</sprite>
+    <sprite>sprites\spr_leftupdownslice</sprite>
+    <sprite>sprites\spr_uprightleftslice</sprite>
+    <sprite>sprites\spr_rightupdownslice</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Backdrops">
@@ -1062,10 +1064,11 @@
     <object>objects\obj_playerhitbox</object>
     <object>objects\obj_combatplayer</object>
     <object>objects\obj_ddragon1</object>
-    <object>objects\obj_dr1Headbutt</object>
+    <object>objects\obj_ddragonHeadbutt</object>
     <object>objects\obj_dr1hitbox</object>
-    <object>objects\obj_tooClose1</object>
-    <object>objects\obj_leftupdownslice</object>
+    <object>objects\obj_ddragonTooClose1</object>
+    <object>objects\obj_ddragontcSlice</object>
+    <object>objects\obj_smallCircle1</object>
   </objects>
   <timelines name="timelines">
     <timelines name="a1s1">
